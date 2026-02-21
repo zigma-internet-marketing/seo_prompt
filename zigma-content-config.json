@@ -1,0 +1,72 @@
+{
+  "keyword": "digital marketing toronto",
+  "target_location": "Toronto, Ontario",
+  "intent": "commercial",
+  "topic_mode": "ServiceAreaLocal",
+  "category": "Digital Marketing Services",
+  "content_type": "blog",
+  "output_format": "text",
+  "hero_banner": false,
+  "meta_fields": true,
+  "mid_banner_count": 2,
+  "manual_title": "",
+  "manual_sections": [],
+  "extra_sections": [
+    "How to Choose the Right Digital Marketing Agency",
+    "What Impacts ROI in Modern Digital Campaigns",
+    "SEO vs PPC: When to Use Each Strategy",
+    "How Local Businesses in Toronto Can Compete Online"
+  ],
+  "keyword_list": [
+    "digital marketing toronto",
+    "digital marketing agency toronto",
+    "seo company toronto",
+    "seo services toronto",
+    "google ads management toronto",
+    "ppc agency toronto",
+    "local seo gta",
+    "lead generation agency toronto",
+    "online marketing toronto",
+    "marketing agency gta",
+    "website design toronto",
+    "conversion rate optimization toronto",
+    "technical seo services",
+    "google business profile optimization",
+    "content marketing toronto"
+  ],
+  "related_topics": [
+    "search engine optimization",
+    "pay per click advertising",
+    "local search marketing",
+    "conversion optimization",
+    "analytics and tracking setup"
+  ],
+  "internal_links": [
+    {
+      "anchor": "SEO Services",
+      "url": "https://zigma.ca/services/search-engine-optimization-seo/"
+    },
+    {
+      "anchor": "Google Ads Management",
+      "url": "https://zigma.ca/services/pay-per-click/"
+    },
+    {
+      "anchor": "Website Design & Development",
+      "url": "https://zigma.ca/services/web-design/"
+    },
+    {
+      "anchor": "Digital Marketing Services",
+      "url": "https://zigma.ca/services/"
+    },
+    {
+      "anchor": "Book a Free Strategy Call",
+      "url": "https://zigma.ca/contact/"
+    }
+  ],
+  "outbound_links": [],
+  "video_portfolio": [],
+  "focus_for_writer": "Create a high-converting, authority-building blog post about {{keyword}} targeting {{target_location}}. Maintain a natural human tone, emphasize measurable outcomes, avoid keyword stuffing, and provide practical insights that demonstrate expertise in SEO, PPC, CRO, and lead generation.",
+  "search_goal": "Educate business owners searching for {{keyword}} in {{target_location}}, clarify service options, build trust, and guide them toward booking a consultation.",
+  "runtime_behavior": "blog",
+  "notes": "Brand reference: Zigma Internet Marketing | Primary CTA (use only when contextually appropriate): https://zigma.ca/contact"
+}
