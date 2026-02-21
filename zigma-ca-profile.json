@@ -1,0 +1,167 @@
+{
+  "business_name": "Zigma Internet Marketing",
+  "business_description": "Zigma Internet Marketing is a Toronto-area (Markham) digital marketing agency focused on lead generation and measurable growth. The team delivers end-to-end strategy and execution across SEO, PPC/SEM, web design & development, content, and social media marketing—supported by clear reporting and performance optimization.",
+  "industry": "Digital Marketing / Advertising Services / Web Design & Development",
+  "services": [
+    "Search engine optimization (SEO)",
+    "Local SEO & Google Business Profile optimization",
+    "Google Ads (PPC) & search engine marketing (SEM)",
+    "Landing pages & conversion rate optimization (CRO)",
+    "Website design (WordPress / Shopify)",
+    "Website development & technical SEO",
+    "E-commerce marketing & product feed optimization",
+    "Content strategy & SEO content writing",
+    "Social media marketing (organic & paid)",
+    "Analytics setup, dashboards, and performance reporting"
+  ],
+  "address": {
+    "street": "80 Tiverton Crt, Unit 803A",
+    "city": "Markham",
+    "region": "ON",
+    "postal_code": "L3R 0G4",
+    "country": "CA"
+  },
+  "phone": "(647) 556-6071",
+  "phone_link": "+16475566071",
+  "email": "info@zigma.ca",
+  "website": "https://zigma.ca/",
+  "logo_url": "https://media.licdn.com/dms/image/v2/C560BAQHvr4RApcQy3w/company-logo_200_200/company-logo_200_200/0/1631324638332?e=2147483647&t=qwWsXNvAqa5SYqRpwE10FuZn3DqvNJIagHWWMi9Rmw4&v=beta",
+  "blog_url": "https://zigma.ca/blog/",
+  "author": {
+    "name": "Ryan Mesbahi",
+    "title": "Senior SEO & Digital Marketing Specialist with 10+ years of experience (Zigma Internet Marketing).",
+    "image": "https://zigma.ca/wp-content/uploads/2025/09/Ryan-Mesbahi.jpg",
+    "link": "https://ca.linkedin.com/in/ryan-me"
+  },
+  "tone": "professional, transparent, data-driven, conversion-focused, client-first",
+  "primary_city": "Markham",
+  "service_area": [
+    "Toronto",
+    "GTA",
+    "Markham",
+    "Richmond Hill",
+    "Vaughan",
+    "Thornhill",
+    "Mississauga",
+    "Brampton",
+    "Oakville",
+    "Burlington",
+    "Pickering",
+    "Ajax",
+    "Whitby",
+    "Ontario",
+    "Canada"
+  ],
+  "social_links": {
+    "facebook": "https://www.facebook.com/zigma.ca/",
+    "instagram": "https://www.instagram.com/zigma_internet_marketing/?hl=en",
+    "twitter": "https://x.com/MarketingZigma",
+    "linkedin": "https://ca.linkedin.com/company/zigma-internet-marketing",
+    "youtube": "https://www.youtube.com/@zigma_internet_marketing/videos",
+    "feed": ""
+  },
+  "default_internal_links": {
+    "services_url": "https://zigma.ca/services/",
+    "services_anchor": "Digital Marketing Services",
+    "seo_url": "https://zigma.ca/services/search-engine-optimization-seo/",
+    "seo_anchor": "SEO Services",
+    "ppc_url": "https://zigma.ca/services/pay-per-click/",
+    "ppc_anchor": "Google Ads (PPC)"
+  },
+  "default_cta": {
+    "cta_anchor": "📩 Book a Free Strategy Call",
+    "cta_url": "https://zigma.ca/contact/"
+  },
+  "trust_cta_by_intent": {
+    "Informational": "📩 Ask an SEO/PPC question",
+    "Commercial": "📩 Request a strategy + pricing",
+    "Transactional": "📩 Book a free strategy call",
+    "Navigational": "📞 Contact Zigma",
+    "Default": "📩 Book a free strategy call"
+  },
+  "cta_style": {
+    "section_color": "#111111",
+    "button_color": "#F59E0B",
+    "font_color": "#FFFFFF"
+  },
+  "schema_defaults": {
+    "opening_days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "open_hour": "09:00",
+    "close_hour": "18:30"
+  },
+  "default_images": {
+    "feature_image_url": "https://media.licdn.com/dms/image/v2/C561BAQGCCd3i1CBnVQ/company-background_10000/company-background_10000/0/1585748017985/zigma_internet_marketing_cover?e=2147483647&t=-XQXrzoPQt6G28DJC8i-csfcrj2ivAa5ZwST3RjLTos&v=beta",
+    "body_image_1": "",
+    "body_image_2": ""
+  },
+  "brand_advantages": [
+    "Google Partner-certified expertise and best-practice execution",
+    "Full-service delivery across SEO, PPC, web, content, and social",
+    "Clear reporting with KPI-driven optimization to reduce acquisition costs",
+    "Experience across local lead-gen and e-commerce growth",
+    "Practical implementation support (tracking, analytics, CRO, landing pages)"
+  ],
+  "service_strengths": [
+    "SEO strategies built for long-term visibility and lead flow",
+    "PPC campaigns engineered for efficiency (queries, negatives, landing pages, tracking)",
+    "Shopify/WordPress builds that support SEO, speed, and conversion",
+    "Content systems that scale across multiple service areas and keywords",
+    "Analytics and dashboards that connect spend to outcomes"
+  ],
+  "customer_experience_points": [
+    "Straightforward communication and transparent performance reporting",
+    "Execution that prioritizes measurable outcomes (calls, forms, sales)",
+    "Process-driven optimization cycles (test, measure, improve)"
+  ],
+  "quality_philosophy": [
+    "Measure what matters (leads, revenue, efficiency)",
+    "Ship improvements continuously (technical SEO, CRO, tracking, content)",
+    "Align strategy to business goals and operating constraints",
+    "No vanity metrics without business context"
+  ],
+  "industry_environments": [
+    "Local service businesses",
+    "E-commerce brands",
+    "Professional services",
+    "B2B companies",
+    "Multi-location businesses"
+  ],
+  "service_keywords": {
+    "seo": [
+      "seo company toronto",
+      "seo services toronto",
+      "local seo gta",
+      "technical seo",
+      "content seo"
+    ],
+    "ppc": [
+      "google ads management toronto",
+      "ppc agency toronto",
+      "search engine marketing sem",
+      "lead generation ads"
+    ],
+    "web": [
+      "wordpress web design toronto",
+      "shopify web design toronto",
+      "website development gta"
+    ],
+    "social": [
+      "social media marketing toronto",
+      "facebook ads",
+      "instagram ads",
+      "linkedin marketing"
+    ],
+    "analytics": [
+      "ga4 setup",
+      "google tag manager",
+      "conversion tracking",
+      "marketing dashboards"
+    ]
+  }
+}
