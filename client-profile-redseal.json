@@ -1,0 +1,182 @@
+{
+  "business_name": "Red Seal Vending",
+  "business_description": "Red Seal Vending is a proudly Canadian, family-owned vending company serving the Greater Toronto Area for over 30 years. The company provides full-service vending solutions including snack, beverage, coffee, water, and custom vending machines, along with vending machine sales, repairs, and preventative maintenance. Red Seal Vending is trusted by businesses, schools, hospitals, community centres, municipalities, and industrial facilities across Ontario.",
+  "industry": "Vending Machines / Office Coffee Services / Refreshment Services",
+  "services": [
+    "Full-service vending solutions",
+    "Office coffee services",
+    "Snack vending machines",
+    "Beverage vending machines",
+    "Combo vending machines",
+    "Water cooler services",
+    "Custom vending machines",
+    "PPE vending machines",
+    "New vending machine sales",
+    "Refurbished and used vending machine sales",
+    "Vending machine repair and maintenance",
+    "Preventative maintenance programs",
+    "Vending machine installation",
+    "Vending machine relocation"
+  ],
+  "address": {
+    "street": "1929 Hwy 7",
+    "city": "Vaughan",
+    "region": "ON",
+    "postal_code": "L4K 1V5",
+    "country": "CA"
+  },
+  "phone": "1(800)334-6289",
+  "phone_link": "+18003346289",
+  "email": "info@redsealvending.ca",
+  "website": "https://www.redsealvending.ca/",
+  "logo_url": "https://images.squarespace-cdn.com/content/v1/5a5510b49f07f5b634055938/1519140773807-LU8SJF9ETDHZ4R1K8413/Red+Seal+Vending+Inc",
+  "blog_url": "https://www.redsealvending.ca/blog/",
+  "author": {
+    "name": "Ryan Mesbahi",
+    "title": "Senior SEO & Digital Marketing Specialist with over 10 years of experience, part of the Zigma Internet Marketing team.",
+    "image": "https://zigma.ca/wp-content/uploads/2025/09/Ryan-Mesbahi.jpg",
+    "link": "https://ca.linkedin.com/in/ryan-me"
+  },
+  "tone": "professional, friendly, reliable, service-driven, customer-focused",
+  "primary_city": "Vaughan",
+  "service_area": [
+    "Toronto",
+    "GTA",
+    "Vaughan",
+    "Woodbridge",
+    "Markham",
+    "Richmond Hill",
+    "Mississauga",
+    "Brampton",
+    "Bradford",
+    "Brantford",
+    "Barrie",
+    "Newmarket",
+    "Aurora",
+    "Ontario",
+    "Canada"
+  ],
+  "social_links": {
+    "facebook": "https://www.facebook.com/redsealvending#",
+    "instagram": "",
+    "twitter": "",
+    "linkedin": "https://www.linkedin.com/company/red-seal-vending/",
+    "feed": "",
+    "pinterest": "https://ca.pinterest.com/redsealvending/"
+  },
+  "default_internal_links": {
+    "products_url": "https://www.redsealvending.ca/vending",
+    "products_anchor": "Full-Service Vending Solutions",
+    "services_url": "https://www.redsealvending.ca/equipment-for-sale",
+    "services_anchor": "Vending Machines for Sale"
+  },
+  "default_cta": {
+    "cta_anchor": "📩 Request a Free Vending Consultation",
+    "cta_url": "https://www.redsealvending.ca/contact"
+  },
+  "trust_cta_by_intent": {
+    "Informational": "📩 Speak with a vending specialist",
+    "Commercial": "📩 Request vending solutions & pricing",
+    "Transactional": "📩 Request a vending quote",
+    "Navigational": "📞 Contact Red Seal Vending",
+    "Default": "📩 Request a vending consultation"
+  },
+  "cta_style": {
+    "section_color": "#3B3B3B",
+    "button_color": "#B90D0D",
+    "font_color": "#FFFFFF"
+  },
+  "schema_defaults": {
+    "opening_days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "open_hour": "10:00",
+    "close_hour": "17:00"
+  },
+  "default_images": {
+    "feature_image_url": "https://images.squarespace-cdn.com/content/v1/5a5510b49f07f5b634055938/1589925259344-3DV8E4SSZS8V8FIPZA6O/Cannibis-vending-machine.jpg",
+    "body_image_1": "https://images.squarespace-cdn.com/content/v1/5a5510b49f07f5b634055938/1517603780406-Z9IUHZ91UP2C3XQM2IAA/vending-service-snacks-freshfood-beverages.png",
+    "body_image_2": "https://images.squarespace-cdn.com/content/v1/5a5510b49f07f5b634055938/1519790972902-7619SINKFVDU5RZDSDVV/Red-Seal-Vending-delivery-truck.png"
+  },
+  "brand_advantages": [
+    "Over 30 years of experience in the vending and refreshment industry",
+    "Canadian-owned and family-operated business",
+    "Modern vending machines with smart payment technology",
+    "Accepts cash, debit, credit card, Apple Pay, and Android Pay",
+    "Free equipment, free demo, and free installation",
+    "Preventative maintenance program focused on uptime",
+    "Machines repaired within 24 hours of notification or replaced with similar equipment",
+    "Fully insured with WSIB-covered drivers",
+    "Trusted by businesses, schools, hospitals, and municipalities"
+  ],
+  "service_strengths": [
+    "Reliable full-service vending programs",
+    "Office coffee solutions for workplaces and facilities",
+    "Fast-response vending machine repairs",
+    "Large inventory of new and refurbished machines",
+    "Custom vending and PPE vending solutions",
+    "Vending machine sales available across Canada"
+  ],
+  "customer_experience_points": [
+    "Minimal downtime supported by a preventative maintenance program",
+    "Fast repair turnaround and dependable replacement options",
+    "Friendly, knowledgeable staff with hands-on vending experience",
+    "Trusted by a wide range of organizations across the GTA"
+  ],
+  "quality_philosophy": [
+    "Service reliability is non-negotiable",
+    "Customer satisfaction through proactive maintenance",
+    "Modern, well-maintained equipment",
+    "Professional and insured service delivery",
+    "Long-term partnerships over short-term transactions"
+  ],
+  "industry_environments": [
+    "Corporate offices",
+    "Manufacturing plants",
+    "Hospitals and healthcare facilities",
+    "Schools and colleges",
+    "Community centres",
+    "Municipal buildings",
+    "Recreational facilities",
+    "Special events"
+  ],
+  "service_keywords": {
+    "vending": [
+      "vending machines",
+      "vending services",
+      "full-service vending",
+      "Toronto vending company",
+      "GTA vending services"
+    ],
+    "coffee": [
+      "office coffee services",
+      "commercial coffee machines",
+      "workplace coffee solutions"
+    ],
+    "sales": [
+      "buy vending machines",
+      "vending machines for sale",
+      "new vending machines",
+      "used vending machines",
+      "refurbished vending machines"
+    ],
+    "custom": [
+      "custom vending machines",
+      "PPE vending machines",
+      "branded vending machines"
+    ],
+    "repair": [
+      "vending machine repair",
+      "vending machine maintenance",
+      "preventative maintenance"
+    ],
+    "water": [
+      "water cooler services",
+      "water cooler service for offices"
+    ]
+  }
+}

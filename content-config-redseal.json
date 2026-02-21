@@ -1,0 +1,80 @@
+{
+  "keyword": "vending machine for sale",
+  "target_location": "",
+  "intent": "commercial",
+  "topic_mode": "ServiceAreaLocal",
+  "category": "Vending Machines and Services",
+  "content_type": "blog",
+  "output_format": "text",
+  "hero_banner": false,
+  "meta_fields": true,
+  "mid_banner_count": 2,
+
+  "manual_title": "",
+  "manual_sections": [],
+
+  "extra_sections": [
+    "What to Understand Before Making a Decision",
+    "A Practical Look at How the Process Works",
+    "Budget Considerations and Common Questions"
+  ],
+
+  "keyword_list": [
+  "vending machine for sale",
+  "vending machines for sale",
+  "buy vending machine",
+  "new vending machines",
+  "used vending machines",
+  "refurbished vending machines",
+  "commercial vending machines",
+  "snack vending machine for sale",
+  "beverage vending machine for sale",
+  "combo vending machine for sale",
+  "coffee vending machine",
+  "custom vending machine",
+  "vending machine prices",
+  "vending machine cost",
+  "where to buy a vending machine"
+],
+
+  "related_topics": [],
+
+  "internal_links": [
+    {
+      "anchor": "Full-Service Vending",
+      "url": "https://www.redsealvending.ca/vending"
+    },
+    {
+      "anchor": "Office Coffee Options",
+      "url": "https://www.redsealvending.ca/brewer-options"
+    },
+    {
+      "anchor": "Water Cooler Services",
+      "url": "https://www.redsealvending.ca/water-cooler-services"
+    },
+    {
+      "anchor": "Vending Machines for Sale",
+      "url": "https://www.redsealvending.ca/equipment-for-sale"
+    },
+    {
+      "anchor": "Custom & PPE Vending Machines",
+      "url": "https://www.redsealvending.ca/buy-custom-vending-machines"
+    },
+    {
+      "anchor": "Refurbished/Used Vending Machines",
+      "url": "https://www.redsealvending.ca/refurbished-vending-machines"
+    }
+  ],
+
+  "outbound_links": [],
+
+  "video_portfolio": [],
+
+  "focus_for_writer": "Create an informative, reader-focused blog post about {{keyword}}. Write in a natural, human tone, prioritize clarity and usefulness, avoid keyword stuffing, and explain concepts in a way that builds understanding and trust.",
+
+  "search_goal": "Educate readers about {{keyword}}, answer common questions, and help them make informed decisions by the end of the article.",
+
+  "runtime_behavior": "blog",
+
+  "notes": "Brand reference: Red Seal Vending | Primary CTA (use only if contextually appropriate): https://www.redsealvending.ca/contact"
+}
