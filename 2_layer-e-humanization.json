@@ -1,0 +1,242 @@
+{
+  "layer": "E",
+  "name": "Humanization & Natural Language Quality",
+  "purpose": "Ensure content reads as if written by a real professional for real people, while preserving accuracy, intent clarity, semantic structure, and SEO integrity.",
+  "global_guardrails": {
+    "non_negotiable": [
+      "If any humanization technique reduces clarity, accuracy, intent alignment, or semantic precision, it must be removed.",
+      "Humanization must not rewrite or alter meaning.",
+      "Layer E does not override Layer A (Content Excellence), Layer B (AI Extractability), or Layer C (SEO Execution).",
+      "Apply Layer E only after Layers A and B are correct."
+    ]
+  },
+  "rules": {
+    "1_editorial_descriptive_headings": {
+      "description": "Headings should clearly describe what is being answered, often framed as natural questions.",
+      "allowed": [
+        "Descriptive, explanatory headings",
+        "Natural question-style headings when appropriate"
+      ],
+      "disallowed": [
+        "Slogans",
+        "Vague labels (e.g., Overview, Key Insights)",
+        "Marketing-style headers"
+      ]
+    },
+    "2_natural_sentence_rhythm": {
+      "description": "Use varied sentence length to create natural reading cadence.",
+      "allowed": [
+        "Mix of short and long sentences",
+        "Occasional short emphasis sentences"
+      ],
+      "disallowed": [
+        "Uniform sentence length",
+        "Run-on sentences",
+        "Overly complex sentence structures"
+      ]
+    },
+    "3_bullets_with_context": {
+      "description": "Each bullet must be a complete, meaningful thought.",
+      "allowed": [
+        "Full-sentence bullets with explanation",
+        "Contextual, specific bullet points"
+      ],
+      "disallowed": [
+        "One-word bullets",
+        "Lists without explanation"
+      ]
+    },
+    "4_smooth_transitions": {
+      "description": "Use connective language so content reads as a cohesive narrative.",
+      "allowed": [
+        "Cause-and-effect transitions",
+        "Practical connective phrasing"
+      ],
+      "disallowed": [
+        "Abrupt topic jumps",
+        "Rigid or outline-like transitions"
+      ]
+    },
+    "5_light_grounded_personal_voice": {
+      "description": "Use restrained personal framing only when it adds realism or clarity.",
+      "allowed": [
+        "Occasional professional experience framing"
+      ],
+      "disallowed": [
+        "Overuse of first-person plural",
+        "Forced storytelling",
+        "Invented anecdotes"
+      ]
+    },
+    "6_local_situational_color": {
+      "description": "Include contextual details only when they materially affect understanding.",
+      "allowed": [
+        "Seasonal timing",
+        "Regional regulations",
+        "Climate or property-type references when relevant"
+      ],
+      "disallowed": [
+        "Forced local mentions",
+        "Pop culture references",
+        "Irrelevant location details"
+      ]
+    },
+    "7_replace_buzzwords_with_outcomes": {
+      "description": "Replace vague marketing language with concrete observations or outcomes.",
+      "allowed": [
+        "Outcome-based explanations",
+        "Observable effects"
+      ],
+      "disallowed": [
+        "Game-changing",
+        "Industry-leading",
+        "Best-in-class"
+      ]
+    },
+    "8_balanced_professional_tone": {
+      "description": "Maintain a calm, helpful, and confident tone.",
+      "preferred_language": [
+        "Often",
+        "In many cases",
+        "Likely"
+      ],
+      "disallowed": [
+        "Absolutes",
+        "Overconfidence",
+        "Sales pressure"
+      ]
+    },
+    "9_stable_terminology_natural_variation": {
+      "description": "Keep core terms and entity names stable while varying surrounding phrasing.",
+      "allowed": [
+        "Consistent use of defined terms",
+        "Natural variation around core terms"
+      ],
+      "disallowed": [
+        "Aggressive synonym rotation",
+        "Renaming core entities"
+      ],
+      "note": "Defined terms and entity names must never be rotated."
+    },
+    "10_non_templated_openers": {
+      "description": "Paragraph and sentence openings should vary naturally.",
+      "disallowed": [
+        "In this article…",
+        "When it comes to…",
+        "Here’s what you need to know…"
+      ]
+    },
+    "11_optional_guiding_questions": {
+      "description": "Use sparingly to guide reader thinking, not as filler.",
+      "allowed": [
+        "Occasional guiding or rhetorical questions"
+      ],
+      "disallowed": [
+        "Forced questions in every section",
+        "Generic FAQ templates"
+      ]
+    },
+    "12_realistic_numbers_ranges": {
+      "description": "Use believable estimates when they add clarity.",
+      "allowed": [
+        "Realistic ranges",
+        "Approximate timeframes"
+      ],
+      "disallowed": [
+        "Fake precision",
+        "Unsupported statistics"
+      ]
+    },
+    "13_natural_punctuation_flow": {
+      "description": "Use punctuation to improve cadence and readability.",
+      "allowed": [
+        "Colons",
+        "Em dashes",
+        "Occasional short fragments"
+      ],
+      "disallowed": [
+        "Over-stylization",
+        "Excessive punctuation tricks"
+      ]
+    },
+    "14_comparisons_that_clarify": {
+      "description": "Include comparisons only when they improve understanding.",
+      "allowed": [
+        "Behavioral or contextual comparisons"
+      ],
+      "disallowed": [
+        "Forced X vs Y contrasts"
+      ]
+    },
+    "15_controlled_fragments": {
+      "description": "Allow limited sentence fragments for emphasis.",
+      "allowed": [
+        "One to two intentional fragments per article"
+      ],
+      "disallowed": [
+        "Fragment-heavy writing",
+        "Style over substance"
+      ]
+    },
+    "16_hedging_over_absolutes": {
+      "description": "Prefer probabilistic language that reflects real-world variation.",
+      "allowed": [
+        "Often",
+        "Sometimes",
+        "In most cases"
+      ],
+      "disallowed": [
+        "Always",
+        "Guaranteed",
+        "Never"
+      ]
+    },
+    "17_perspective_blending": {
+      "description": "Blend perspectives intentionally when useful.",
+      "disallowed": [
+        "Rapid point-of-view switching",
+        "Excessive personalization"
+      ]
+    },
+    "18_canadian_english_standard": {
+      "description": "Use Canadian English spelling, terminology, and conventions when configured for Canadian audiences.",
+      "requirements": [
+        "Canadian spellings (e.g., labour, centre, licence)",
+        "Canadian terminology where it affects meaning",
+        "Avoid U.S.-specific assumptions unless required"
+      ],
+      "disallowed": [
+        "Mixing U.S. and Canadian spelling",
+        "Implicit non-Canadian legal or regulatory references"
+      ]
+    },
+    "19_consistent_heading_casing": {
+      "description": "Headings must follow a consistent editorial casing style.",
+      "best_practices": [
+        "Consistent casing across headings",
+        "Title Case for short emphatic headings",
+        "Sentence case for longer descriptive headings"
+      ],
+      "disallowed": [
+        "Inconsistent capitalization",
+        "Rigid character-count casing rules",
+        "Mechanical or automated casing patterns"
+      ]
+    }
+  },
+  "hard_prohibitions": {
+    "description": "Phrases and patterns that must never appear.",
+    "phrases": [
+      "Looking for the best…",
+      "In this guide, we’ll explore…",
+      "It’s important to note…",
+      "When it comes to…",
+      "At the end of the day…",
+      "One of the best ways to…",
+      "Contact us today",
+      "Click here to learn more",
+      "There are many benefits…",
+      "It’s not one-size-fits-all…"
+    ]
+  }
+}

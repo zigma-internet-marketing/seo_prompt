@@ -1,0 +1,104 @@
+### SEO CONTENT ENGINE – RUNTIME CALL  
+Below is the MASTER SEO ENGINE specification. Obey it fully.
+
+[MASTER_SEO_ENGINE_GENERATE_START]
+{{PASTE 04_engine/master-seo-engine-generate.txt HERE}}
+[MASTER_SEO_ENGINE_GENERATE_END]
+
+### LAYERS (02_layers) — APPLY TO ALL OUTPUTS
+[LAYER_A_CONTENT_EXCELLENCE_START]
+{{PASTE 02_layers/layer-a-content-excellence.json HERE}}
+[LAYER_A_CONTENT_EXCELLENCE_END]
+
+[LAYER_B_AI_EXTRACTABILITY_START]
+{{PASTE 02_layers/layer-b-ai-extractability.json HERE}}
+[LAYER_B_AI_EXTRACTABILITY_END]
+
+[LAYER_C_SEO_EXECUTION_START]
+{{PASTE 02_layers/layer-c-seo-execution.json HERE}}
+[LAYER_C_SEO_EXECUTION_END]
+
+[LAYER_D_STRUCTURE_COVERAGE_START]
+{{PASTE 02_layers/layer-d-structure-coverage.json HERE}}
+[LAYER_D_STRUCTURE_COVERAGE_END]
+
+[LAYER_E_HUMANIZATION_START]
+{{PASTE 02_layers/layer-e-humanization.json HERE}}
+[LAYER_E_HUMANIZATION_END]
+
+[LAYER_F_FORBIDDEN_PHRASES_START]
+{{PASTE 02_layers/layer-f-forbidden-phrases.json HERE}}
+[LAYER_F_FORBIDDEN_PHRASES_END]
+
+### VALIDATION (03_validation)
+[LINTING_GUIDELINES_START]
+{{PASTE 03_validation/linting-guidelines.md HERE}}
+[LINTING_GUIDELINES_END]
+
+[VALIDATION_NOTES_START]
+{{PASTE 03_validation/validation-notes.md HERE}}
+[VALIDATION_NOTES_END]
+
+
+### ENGINE BEHAVIOR (04_engine)
+[INTENT_BEHAVIOR_START]
+{{PASTE 04_engine/intent-behavior.json HERE}}
+[INTENT_BEHAVIOR_END]
+
+[TOPIC_MODE_BEHAVIOR_START]
+{{PASTE 04_engine/topic-mode-behavior.json HERE}}
+[TOPIC_MODE_BEHAVIOR_END]
+
+[SECTIONS_THEME_START]
+{{PASTE 04_engine/sections-theme.json HERE}}
+[SECTIONS_THEME_END]
+
+### CLIENT INPUTS (01_clients)
+[CLIENT_PROFILE_START]
+{{PASTE 01_clients/<CLIENT_NAME>/client-profile.json HERE}}
+[CLIENT_PROFILE_END]
+
+[CONTENT_CONFIG_START]
+{{PASTE 01_clients/<CLIENT_NAME>/content-config.json HERE}}
+[CONTENT_CONFIG_END]
+
+[CLIENT_ABOUT_START]
+{{PASTE 01_clients/<CLIENT_NAME>/client-about.txt HERE}}
+[CLIENT_ABOUT_END]
+
+### RUNTIME INSTRUCTIONS (VERY IMPORTANT)
+
+1) Internalize ALL blocks above (engine + layers + enforcement + client inputs).
+
+2) IMPORTANT: Do NOT use tier or competition to shape output. If present in configs, ignore them.
+
+3) Resolve intent:
+   - If intent is provided manually (non-empty), use it.
+   - Otherwise randomly select an intent from intent-behavior.json.
+
+4) Resolve topic_mode:
+   - If topic_mode is provided manually (non-empty), use it.
+   - Otherwise randomly select a topic_mode from topic-mode-behavior.json (allowed per intent).
+
+5) Resolve title:
+   - If manual_title is provided (non-empty), use it exactly and do NOT generate a new title.
+   - Otherwise generate a title that fits intent + topic_mode requirements.
+
+6) Resolve section structure:
+   - If manual_sections_structure is provided and non-empty:
+     - Use ONLY those sections (ignore sections-theme and ignore topic-mode section selection).
+     - Generate content in that order.
+   - Else:
+     - Build the plan as START sections (fixed in master engine) + BODY sections (topic-mode-behavior + sections-theme) + EXTRA sections (after body, before end) + END sections (fixed in master engine).
+
+7) Generate the full content for the resolved title + section plan.
+
+8) Validate + optimize:
+   - Apply layers A→D→C→B→E (per the master’s layer protocol).
+   - Enforce forbidden phrases.
+   - Run linting-guidelines.md and validation-notes.md; fix all issues.
+
+9) Output rules:
+   - Output ONLY the final content body in the requested output_format.
+   - Do NOT explain anything.
+   - Do NOT reference configs, layers, or rule files.

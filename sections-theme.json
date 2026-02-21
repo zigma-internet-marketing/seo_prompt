@@ -1,0 +1,735 @@
+{
+  "version": "3.0.0",
+  "file": "sections-theme.json",
+  "notes": [
+    "Unified section planning + section writing behavior. Do not output this file verbatim in generation.",
+    "Selection/order is defined under plan. Per-section writing guidance is defined under sections."
+  ],
+  "sections": {
+    "social_sections": {
+      "number": 1,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Optional social/meta preface block used in some wrappers to expose title, meta description, and intro_copy for downstream automation. Not visible to end readers unless the CMS renders it.",
+      "rendering": {
+        "html": [
+          "<h1>{{DynamicTitle}}</h1>",
+          "<description>{{DynamicMetaDescription}}</description>",
+          "<intro_copy>{{IntoCopy}}</intro_copy>"
+        ],
+        "text": [
+          "{{DynamicTitle}}",
+          "description: {{DynamicMetaDescription}}",
+          "intro_copy: {{IntoCopy}}"
+        ]
+      },
+      "rules": {
+        "only_when": [
+          "manual_sections_empty",
+          "section_in_plan"
+        ],
+        "notes": [
+          "Do not use 'In this article' style meta lines (enforced by forbidden phrases)."
+        ]
+      },
+      "templates": {
+        "html": "<h1>{{DynamicTitle}}</h1><br>\n<description>{{DynamicMetaDescription}}</description><br>\n<intro_copy>{{IntoCopy}}</intro_copy><br>"
+      }
+    },
+    "headline_introduction": {
+      "number": 2,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Open with a natural, human H2 and intro paragraphs that hook emotionally and set context without meta narration.",
+      "heading": {
+        "source": "DynamicH2_Intro",
+        "style": "editorial_or_natural_question"
+      },
+      "structure": {
+        "min_paragraphs": 1,
+        "max_paragraphs": 3,
+        "sentences_per_paragraph": "4–6"
+      },
+      "must_include": [
+        "Emotional hook or pain/season opener",
+        "Contextual introduction to topic",
+        "Internal link #1: <a href=\"{{First_published_url}}\" target=\"_blank\"><strong>{{First_anchor_Text}}</strong></a>"
+      ],
+      "avoid": [
+        "Meta lines like 'In this article…'"
+      ],
+      "transitions": [
+        "End with 1–2 connector sentences into next section."
+      ]
+    },
+    "core_keyword_section": {
+      "number": 3,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Explain the core keyword: what it is, how it works, when it matters; address misconceptions and practical triggers.",
+      "heading": {
+        "source": "DynamicH2_3",
+        "style": "editorial_or_natural_question"
+      },
+      "structure": {
+        "min_paragraphs": 2,
+        "max_paragraphs": 4,
+        "sentences_per_paragraph": "4–6"
+      },
+      "must_include": [
+        "What it is / how it works / when it matters",
+        "Misconceptions or seasonal impact (if relevant)",
+        "Internal link #2: <a href=\"{{Second_published_url}}\" target=\"_blank\"><strong>{{Second_anchor_Text}}</strong></a> integrated naturally"
+      ],
+      "avoid": [
+        "Over-formal 'What is…' heading phrasing",
+        "Robotic definitions without context"
+      ]
+    },
+    "local_service_fit": {
+      "number": 4,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Connect the topic to the target location through local factors, recognizable examples, and decision criteria.",
+      "subsections": {
+        "4A_local_relevance": {
+          "heading_source": "DynamicH2_4A",
+          "requirements": [
+            "Tailor to {{Section4A}}",
+            "Discuss local challenges/needs in {{Target_Location}} and how {{Business_Name}} addresses them",
+            "Close with connector sentences to next section"
+          ],
+          "structure": {
+            "min_paragraphs": 1,
+            "max_paragraphs": 2,
+            "sentences_per_paragraph": "4–6"
+          }
+        },
+        "4B_neighbourhoods_landmarks_industries": {
+          "heading_source": "DynamicH2_4B",
+          "requirements": [
+            "Tailor to {{Section4B}}",
+            "Mention 2–3 recognizable places/industries/community hubs in {{Target_Location}} tied back to service/product",
+            "Close with connector sentences"
+          ],
+          "structure": {
+            "min_paragraphs": 1,
+            "max_paragraphs": 2,
+            "sentences_per_paragraph": "4–6"
+          }
+        },
+        "4C_practical_service_fit": {
+          "heading_source": "DynamicH2_4C",
+          "requirements": [
+            "Tailor to {{Section4C}} (or {{Section4B}} if legacy)",
+            "Highlight decision factors (affordability, timelines, cultural relevance, service features) that matter locally"
+          ],
+          "structure": {
+            "min_paragraphs": 1,
+            "max_paragraphs": 2,
+            "sentences_per_paragraph": "4–6"
+          }
+        }
+      },
+      "rules": {
+        "only_if_location": "If Target_Location is empty, skip or generalize without inventing local details (per humanization rules)."
+      }
+    },
+    "comparison_accordion": {
+      "number": 5,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "A structured, skimmable comparison with trade-offs using 3 accordion blocks, each with 3 options and consistent sub-bullets.",
+      "heading": {
+        "source": "DynamicH2_5",
+        "style": "editorial_or_natural_question"
+      },
+      "intro_paragraph": {
+        "required": true,
+        "sentences": "1–3",
+        "must_include": [
+          "Why comparison matters",
+          "{{Keyword}} (or variation)",
+          "{{Target_Location}} if provided"
+        ],
+        "tone": "warm_conversational"
+      },
+      "layout": {
+        "type": "accordion",
+        "accordion_blocks": 3,
+        "details_per_block": 1,
+        "options_per_details": 3,
+        "li_per_option": 3,
+        "li_labels": [
+          "How it works",
+          "Best fit",
+          "Example"
+        ]
+      },
+      "rules": {
+        "option_overview_sentences": "2–3",
+        "no_fragments_in_li": true
+      },
+      "templates": {
+        "html": "<section class=\"blog-section\">\n  <h2>{{DynamicH2_5}}</h2>\n  <p>{{ComparisonIntroParagraph}}</p>\n\n  <div class=\"comparison-accordion\">\n    <details class=\"accordion-compare\">\n      <summary>{{ComparisonCategory1}}</summary>\n\n      <p><strong>A) {{OptionA1_Name}}:</strong> {{OptionA1_Overview}}</p>\n      <ul>\n        <li><em><strong>How it works:</strong></em> {{OptionA1_HowItWorks}}</li>\n        <li><em><strong>Best fit:</strong></em> {{OptionA1_BestFit}}</li>\n        <li><em><strong>Example:</strong></em> {{OptionA1_Example}}</li>\n      </ul>\n\n      <p><strong>B) {{OptionB1_Name}}:</strong> {{OptionB1_Overview}}</p>\n      <ul>\n        <li><em><strong>How it works:</strong></em> {{OptionB1_HowItWorks}}</li>\n        <li><em><strong>Best fit:</strong></em> {{OptionB1_BestFit}}</li>\n        <li><em><strong>Example:</strong></em> {{OptionB1_Example}}</li>\n      </ul>\n\n      <p><strong>C) {{OptionC1_Name}}:</strong> {{OptionC1_Overview}}</p>\n      <ul>\n        <li><em><strong>How it works:</strong></em> {{OptionC1_HowItWorks}}</li>\n        <li><em><strong>Best fit:</strong></em> {{OptionC1_BestFit}}</li>\n        <li><em><strong>Example:</strong></em> {{OptionC1_Example}}</li>\n      </ul>\n    </details>\n  </div>\n\n  <div class=\"comparison-accordion\">\n    <details class=\"accordion-compare\">\n      <summary>{{ComparisonCategory2}}</summary>\n\n      <p><strong>A) {{OptionA2_Name}}:</strong> {{OptionA2_Overview}}</p>\n      <ul>\n        <li><em><strong>How it works:</strong></em> {{OptionA2_HowItWorks}}</li>\n        <li><em><strong>Best fit:</strong></em> {{OptionA2_BestFit}}</li>\n        <li><em><strong>Example:</strong></em> {{OptionA2_Example}}</li>\n      </ul>\n\n      <p><strong>B) {{OptionB2_Name}}:</strong> {{OptionB2_Overview}}</p>\n      <ul>\n        <li><em><strong>How it works:</strong></em> {{OptionB2_HowItWorks}}</li>\n        <li><em><strong>Best fit:</strong></em> {{OptionB2_BestFit}}</li>\n        <li><em><strong>Example:</strong></em> {{OptionB2_Example}}</li>\n      </ul>\n\n      <p><strong>C) {{OptionC2_Name}}:</strong> {{OptionC2_Overview}}</p>\n      <ul>\n        <li><em><strong>How it works:</strong></em> {{OptionC2_HowItWorks}}</li>\n        <li><em><strong>Best fit:</strong></em> {{OptionC2_BestFit}}</li>\n        <li><em><strong>Example:</strong></em> {{OptionC2_Example}}</li>\n      </ul>\n    </details>\n  </div>\n\n  <div class=\"comparison-accordion\">\n    <details class=\"accordion-compare\">\n      <summary>{{ComparisonCategory3}}</summary>\n\n      <p><strong>A) {{OptionA3_Name}}:</strong> {{OptionA3_Overview}}</p>\n      <ul>\n        <li><em><strong>How it works:</strong></em> {{OptionA3_HowItWorks}}</li>\n        <li><em><strong>Best fit:</strong></em> {{OptionA3_BestFit}}</li>\n        <li><em><strong>Example:</strong></em> {{OptionA3_Example}}</li>\n      </ul>\n\n      <p><strong>B) {{OptionB3_Name}}:</strong> {{OptionB3_Overview}}</p>\n      <ul>\n        <li><em><strong>How it works:</strong></em> {{OptionB3_HowItWorks}}</li>\n        <li><em><strong>Best fit:</strong></em> {{OptionB3_BestFit}}</li>\n        <li><em><strong>Example:</strong></em> {{OptionB3_Example}}</li>\n      </ul>\n\n      <p><strong>C) {{OptionC3_Name}}:</strong> {{OptionC3_Overview}}</p>\n      <ul>\n        <li><em><strong>How it works:</strong></em> {{OptionC3_HowItWorks}}</li>\n        <li><em><strong>Best fit:</strong></em> {{OptionC3_BestFit}}</li>\n        <li><em><strong>Example:</strong></em> {{OptionC3_Example}}</li>\n      </ul>\n    </details>\n  </div>\n</section>"
+      }
+    },
+    "emotional_value_fit": {
+      "number": 6,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Help the reader judge fit: lifestyle, comfort, risk tolerance, budget sensitivity, aesthetics, long-term goals.",
+      "heading": {
+        "source": "DynamicH2_6",
+        "style": "editorial_or_natural_question"
+      },
+      "structure": {
+        "min_paragraphs": 2,
+        "max_paragraphs": 4,
+        "sentences_per_paragraph": "4–6"
+      },
+      "prompts": [
+        "Reflect family needs, elderly comfort, aesthetic fit, energy bills, operational stress, etc."
+      ]
+    },
+    "case_study": {
+      "number": 7,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "A realistic, modest case story with structured fields: client, challenge, approach, outcome, human detail.",
+      "heading": {
+        "source": "DynamicH2_7",
+        "style": "editorial_or_natural_question"
+      },
+      "structure": {
+        "setup_sentences": "4–5",
+        "min_paragraphs": 3,
+        "max_paragraphs": 6
+      },
+      "must_include": [
+        "Client type + local detail",
+        "Challenge (1–2 pains)",
+        "Approach (2–3 tactics)",
+        "Outcome (1–2 metrics) + realistic timeline",
+        "Human detail (testimonial-style line; no clichés)"
+      ],
+      "voice": {
+        "experience_openers": [
+          "In our projects, we’ve seen…",
+          "A client in the {{Category}} space achieved…",
+          "One {{Business_Type}} in {{Target_Location}} saw results when…"
+        ],
+        "first_hand_phrases": [
+          "In our work, we’ve observed…",
+          "Testing this approach showed us…",
+          "Clients often tell us…"
+        ]
+      },
+      "output_format_example": "blockquote_with_challenge_whatwedid_outcome_clientnote"
+    },
+    "trust_building_cta": {
+      "number": 8,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Primary trust CTA section; appears exactly once; includes trust signals and clickable phone/email links.",
+      "heading": {
+        "source": "DynamicH2_8",
+        "constraints": {
+          "must_include": [
+            "trust",
+            "{{Keyword}} (or variation)"
+          ],
+          "max_chars": 75
+        }
+      },
+      "must_include": [
+        "1 trust artifact (certification/insurance/WSIB/ISO/COR/etc.)",
+        "Clickable tel/mail links",
+        "CTA button block if CTA_Banner true"
+      ],
+      "rendering": {
+        "contact_links": [
+          "<a href=\"tel:{{Phone_Number}}\" target=\"_blank\" rel=\"noopener\">{{Phone_Number}}</a>",
+          "<a href=\"mailto:{{Email}}\" target=\"_blank\" rel=\"noopener\">{{Email}}</a>"
+        ],
+        "cta_block": "<div class=\"prmt-cta-section\" style=\"background-color:{{Section_Color}};\">...</div>"
+      },
+      "rules": {
+        "exactly_once": true
+      },
+      "templates": {
+        "html": "<section class=\"blog-section\">\n  <h2>{{DynamicH2_8}}</h2>\n  <p>{{TrustCtaParagraph}}\n    <a href=\"tel:{{Phone_Number_Link}}\" target=\"_blank\" rel=\"noopener\">{{Phone_Number}}</a>\n    <a href=\"mailto:{{Email}}\" target=\"_blank\" rel=\"noopener\">{{Email}}</a>\n  </p>\n\n  <div class=\"prmt-cta-section\" style=\"background-color:{{Section_Color}};\">\n    <div class=\"prmt-cta-text\" style=\"color: {{Font_Color}};\">\n      <h3 class=\"prmt-cta-heading\" style=\"color: {{Font_Color}};\">Why Locals Trust Us?</h3>\n      {{TrustCtaSubcopy}}\n    </div>\n    <a class=\"prmt-cta-button\" style=\"background-color:{{Button_Color}}; color:{{Font_Color}};\" href=\"{{CTA_URL}}\" target=\"_blank\" aria-label=\"{{Trust_CTA_Anchor}}\">{{Trust_CTA_Anchor}}</a>\n  </div>\n</section>"
+      }
+    },
+    "video_embed": {
+      "number": "8A",
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Optional single video embed selected from VideoPortfolio by tag match; only one per article.",
+      "selection_rules": [
+        "Choose by matching tags with Keyword or Intent; if multiple, random but avoid last-used; if none, random fallback avoiding last-used when possible."
+      ],
+      "rendering": {
+        "iframe": {
+          "width": "100%",
+          "height": 420,
+          "loading": "lazy"
+        },
+        "optional_more_link": "<p>Want to see more videos? <a href=\"{{VideoPortfolioLink}}\" target=\"_blank\" rel=\"noopener\"><strong>{{VideoPortfolioAnchor}}</strong></a>.</p>"
+      },
+      "guardrails": [
+        "Render only if VideoPortfolio exists and length > 0",
+        "Do not render multiple videos even if helpers fire twice."
+      ],
+      "templates": {
+        "html": "<section class=\"blog-section\">\n  <h2>{{VideoSectionH2}}</h2>\n  <p>{{VideoSectionIntro}}</p>\n  <iframe width=\"100%\" height=\"420\" src=\"{{SelectedVideo.embed}}\" title=\"{{SelectedVideo.title}}\" frameborder=\"0\" allowfullscreen loading=\"lazy\"></iframe>\n  <p>Want to see more videos? <a href=\"{{VideoPortfolioLink}}\" target=\"_blank\" rel=\"noopener\"><strong>{{VideoPortfolioAnchor}}</strong></a>.</p>\n</section>"
+      }
+    },
+    "experts_wish_you_knew": {
+      "number": 9,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "2–3 behind-the-scenes pro tips / industry truths.",
+      "heading": {
+        "source": "DynamicH2_9",
+        "style": "editorial_or_natural_question"
+      },
+      "structure": {
+        "min_items": 2,
+        "max_items": 3,
+        "item_style": "mini_tip_with_context"
+      }
+    },
+    "local_service_technology_trends": {
+      "number": 10,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Relevant upgrades/innovations tied to the keyword and local context; focus on practical benefits.",
+      "heading": {
+        "source": "DynamicH2_10",
+        "style": "editorial_or_natural_question"
+      },
+      "avoid": [
+        "Generic year-based trend dumps"
+      ],
+      "structure": {
+        "min_paragraphs": 2,
+        "max_paragraphs": 4
+      }
+    },
+    "honest_insights_from_industry": {
+      "number": 11,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Behind-the-scenes realities: pricing traps, skill gaps, hidden fees, consumer mistakes. Optional comparison block only if it reinforces context.",
+      "heading": {
+        "source": "DynamicH2_11",
+        "style": "editorial_or_natural_question"
+      },
+      "optional_blockquote_comparison": {
+        "enabled_when": "reinforces_keyword_and_context",
+        "format": "<blockquote><strong>{{Comparison_Title}}</strong><br>{{Comparison_Line1}}<br>{{Comparison_Line2}}<br>{{Comparison_Line3}}<br>{{Conclusion_Line}}</blockquote>"
+      },
+      "structure": {
+        "min_paragraphs": 2,
+        "max_paragraphs": 5
+      }
+    },
+    "image_handling_optional": {
+      "number": 12,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Optional insertion rules for body images with accessibility-compliant alt text constraints.",
+      "insertion_points": [
+        "Image #1 immediately BEFORE Section 6 start marker",
+        "Image #2 immediately BEFORE Section 11 start marker"
+      ],
+      "rendering": {
+        "img_tag": "<section class=\"blog-section\"><img src=\"{{Image_URL_X}}\" alt=\"{{Image_Alt_X}}\" loading=\"lazy\"></section>"
+      },
+      "alt_text_rules": [
+        "Must include Keyword naturally",
+        "Add scene/context; avoid 'image of' / 'stock photo'",
+        "Optionally include Target_Location if natural",
+        "Unique per image; not reused",
+        "Include Keyword + 1 secondary keyword (+ optional location)",
+        "Keep under 125 characters"
+      ],
+      "guardrails": [
+        "If Image_URL_1/2 empty, skip block",
+        "Never use Logo_URL in body images."
+      ],
+      "templates": {
+        "html": "<section class=\"blog-section\"><img src=\"{{Image_URL_1}}\" alt=\"{{Image_Alt_1}}\" loading=\"lazy\"></section>\n<section class=\"blog-section\"><img src=\"{{Image_URL_2}}\" alt=\"{{Image_Alt_2}}\" loading=\"lazy\"></section>"
+      }
+    },
+    "hidden_truths_from_industry": {
+      "number": 13,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Emotional-but-real insider truths (3–4) tied to ROI/cost/risk/outcomes; closes with curiosity gap.",
+      "heading": {
+        "source": "DynamicH2_13",
+        "style": "editorial_or_natural_question"
+      },
+      "structure": {
+        "intro_sentences": "2–3",
+        "truth_items": {
+          "min": 3,
+          "max": 4,
+          "format": "<li><strong>Title:</strong> lesson + why it matters</li>"
+        },
+        "closing": "curiosity_gap_sentence"
+      },
+      "tone": "intimate_honest_modest",
+      "avoid": [
+        "generic_tips",
+        "surface_level_advice"
+      ]
+    },
+    "dynamic_strategy_list_howto": {
+      "number": 14,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Primary dynamic list renderer; EXACT count; each item includes description, outcome, result, 2 em-lines, example.",
+      "heading": {
+        "source": "DynamicH2_14",
+        "rules": [
+          "Include Keyword naturally",
+          "Outcome-based/emotional",
+          "Avoid robotic phrasing"
+        ]
+      },
+      "count_logic": {
+        "default": 5,
+        "if_topic_mode_in": [
+          "ListStrategies",
+          "MistakesToAvoid"
+        ],
+        "use": "{{Section14Count = (or ListCount 5)}}"
+      },
+      "item_schema": [
+        "label",
+        "title",
+        "description(2+ sentences)",
+        "outcome",
+        "result",
+        "em_label/em_value",
+        "second_em_label/second_em_value",
+        "example"
+      ],
+      "rendering": {
+        "wrapper": "<section class=\"blog-section\">...</section>",
+        "item": "<div class=\"steps-container\"><h3 class=\"blog-5steps\"><strong>{{label}} {{n}}: {{title}}</strong></h3>...</div>"
+      },
+      "templates": {
+        "html": "<section class=\"blog-section\">\n  <h2>{{DynamicH2_14}}</h2>\n  {{#each Section14Items}}\n    <div class=\"steps-container\">\n      <h3 class=\"blog-5steps\"><strong>{{this.label}} {{@indexPlus1}}: {{this.title}}</strong></h3>\n      <p>{{this.description}} This step helps {{this.outcome}} so you can {{this.result}}.</p>\n      <p><em>{{this.em_label}}:</em> {{this.em_value}}</p>\n      <p><em>{{this.second_em_label}}:</em> {{this.second_em_value}}</p>\n      <p><strong>Example:</strong> {{this.example}}</p>\n    </div>\n  {{/each}}\n</section>"
+      }
+    },
+    "final_soft_close": {
+      "number": 15,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Reflective, non-urgent close. No hard conversion language. May include 1 outbound link insertion rule.",
+      "heading": {
+        "source": "DynamicH2_15",
+        "style": "poetic_emotional"
+      },
+      "constraints": {
+        "min_words": 70,
+        "max_words": 150,
+        "banned_terms": [
+          "book",
+          "quote",
+          "estimate",
+          "pricing",
+          "schedule",
+          "call now"
+        ],
+        "max_exclamations": 1
+      },
+      "outbound_link_injection": {
+        "enabled_when": "outbound_links_non_empty",
+        "exact_links": 1,
+        "placement": "last_sentence_last_paragraph",
+        "algo": "seed_str = H1 normalized; idx = score mod N; pick outbound_links[idx]"
+      }
+    },
+    "mid_content_growth_cta": {
+      "number": 16,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Mandatory mid-content CTA immediately after Section 15, if CTA_Banner true.",
+      "placement": {
+        "after_section": 15,
+        "exactly_once": true
+      },
+      "rendering": {
+        "cta_block": "<div class=\"prmt-cta-section\" style=\"background-color:{{Section_Color}};\">...</div>"
+      },
+      "templates": {
+        "html": "<section class=\"blog-section\">\n  <div class=\"prmt-cta-section\" style=\"background-color:{{Section_Color}};\">\n    <div class=\"prmt-cta-text\" style=\"color: {{Font_Color}};\">\n      <h3 class=\"prmt-cta-heading\" style=\"color: {{Font_Color }};\">{{MidCtaHeading}}</h3>\n      {{MidCtaSubcopy}}\n    </div>\n    <a class=\"prmt-cta-button\" style=\"background-color:{{Button_Color}}; color:{{Font_Color}};\" href=\"{{CTA_URL}}\" target=\"_blank\" aria-label=\"{{Trust_CTA_Anchor}}\">{{CTA_Anchor}}</a>\n  </div>\n</section>"
+      }
+    },
+    "stats_block": {
+      "number": 17,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "2–3 realistic stats with intro; no Business_Name performance claims. Requires at least one credible citation source type.",
+      "heading": {
+        "source": "DynamicH2_Stats",
+        "style": "editorial_or_natural_question"
+      },
+      "structure": {
+        "intro_sentences": "3–4",
+        "min_items": 2,
+        "max_items": 3,
+        "format": "ul_li"
+      },
+      "constraints": [
+        "Truth-adjacent, realistic, regionally plausible (NA/Canada)",
+        "Never claim Business_Name performance data",
+        "At least one citation from .gov/.edu/.org (if your pipeline supports citations)"
+      ]
+    },
+    "faqs": {
+      "number": 18,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Exactly 5 FAQs aligned with intent and keyword.",
+      "heading": {
+        "fixed": "FAQs About {{Keyword}}",
+        "id": "faq"
+      },
+      "structure": {
+        "exact_items": 5,
+        "format": "<div class=\"faq\"><span class=\"faq-questions\"><strong>[Q]</strong></span><p>[A]</p></div>",
+        "answer_word_range": [
+          35,
+          80
+        ]
+      },
+      "rules": [
+        "No h3/h4/ul/li inside FAQ block",
+        "Vary question openers; avoid banned 'What is/Why is' patterns in main body",
+        "Include Target_Location in >=2 answers only if provided (do not invent)"
+      ],
+      "templates": {
+        "html": "<section class=\"blog-section\">\n  <h2 id=\"faq\">FAQs About {{Keyword}}</h2>\n  <div class=\"faq\">\n    <span class=\"faq-questions\"><strong>[Question]</strong></span>\n    <p>[Answer]</p>\n  </div>\n  <!-- Repeat until exactly 5 FAQs total -->\n</section>"
+      }
+    },
+    "bottom_results_cta": {
+      "number": 19,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Final strong CTA block (button banner) at bottom, rendered if CTA_Banner true.",
+      "rendering": {
+        "cta_block": "<div class=\"prmt-cta-section\" style=\"background-color:{{Section_Color}};\">...</div>"
+      },
+      "rules": {
+        "optional": true
+      },
+      "templates": {
+        "html": "<section class=\"blog-section\">\n  <div class=\"prmt-cta-section\" style=\"background-color:{{Section_Color}};\">\n    <div class=\"prmt-cta-text\" style=\"color: {{Font_Color}};\">\n      <h3 class=\"prmt-cta-heading\" style=\"color: {{Font_Color}};\">{{BottomCtaHeading}}</h3>\n      {{BottomCtaSubcopy}}\n    </div>\n    <a class=\"prmt-cta-button\" style=\"background-color:{{Button_Color}}; color:{{Font_Color}};\" href=\"{{CTA_URL}}\" target=\"_blank\" aria-label=\"{{Trust_CTA_Anchor}}\">{{CTA_Anchor}}</a>\n  </div>\n</section>"
+      }
+    },
+    "related_topics": {
+      "number": 20,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Related topics list, if provided.",
+      "structure": {
+        "min_items": 1,
+        "max_items": 10,
+        "format": "ul_li_links"
+      },
+      "guardrails": [
+        "Skip entirely if Related_Topics empty."
+      ],
+      "templates": {
+        "html": "<section class=\"blog-section\">\n  <h3>Related Topics:</h3>\n  <ul>\n    {{#each Related_Topics}}\n      <li><a href=\"{{this.url}}\" target=\"_blank\">{{this.anchor}}</a></li>\n    {{/each}}\n  </ul>\n</section>"
+      }
+    },
+    "slug_output": {
+      "number": 21,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Optional slug output for downstream automation.",
+      "rendering": {
+        "html": "<slug>{{DynamicTitle | slugify}}</slug>"
+      },
+      "rules": {
+        "optional": true
+      },
+      "templates": {
+        "html": "<slug>{{DynamicTitle | slugify}}</slug>"
+      }
+    },
+    "author_business_identity": {
+      "number": 22,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Author + business identity block for E-E-A-T and transparency.",
+      "rendering": {
+        "html": "<section class=\"author-section\">...</section>"
+      },
+      "must_include": [
+        "Author_Name",
+        "Author_Title",
+        "Author_Link",
+        "Author_Image",
+        "Business_Description"
+      ],
+      "optional": [
+        "AI disclosure line based on AI_Disclosure flag"
+      ],
+      "templates": {
+        "html": "<section class=\"author-section\">\n  <div class=\"author-container\">\n    <div class=\"author-image\">\n      <img src=\"{{Author_Image}}\" alt=\"Author: {{Author_Name}}\">\n    </div>\n    <div class=\"author-details\">\n      <p><strong>Author: </strong><a href=\"{{Author_Link}}\" target=\"_blank\" rel=\"nofollow noopener\">{{Author_Name}}</a></p>\n      <p>{{Author_Title}}</p>\n      <p>{{Business_Description}}</p>\n      <div class=\"authorship-note\">\n        <p>{{Authorship_Note}}</p>\n      </div>\n    </div>\n  </div>\n</section>"
+      }
+    },
+    "schema_markup": {
+      "number": 23,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "JSON-LD schema graph: Article/WebPage, LocalBusiness, FAQPage, BreadcrumbList, optional Review.",
+      "placement": "very_end_after_visible_content",
+      "requirements": [
+        "FAQPage schema must match visible FAQs exactly when FAQs rendered",
+        "No wrapping in html/head/body"
+      ],
+      "templates": {
+        "html": "<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@graph\": [\n    {\n      \"@type\": \"{{@type}}\",\n      \"inLanguage\": \"en-CA\",\n      \"about\": {\"@type\": \"Thing\", \"name\": \"{{Keyword}}\"},\n      \"headline\": \"{{DynamicTitle}}\",\n      \"name\": \"{{DynamicTitle}}\",\n      \"description\": \"{{DynamicMetaDescription}}\",\n      \"image\": \"{{Feature_Image_URL}}\",\n      \"primaryImageOfPage\": {\n        \"@type\": \"ImageObject\",\n        \"url\": \"{{Feature_Image_URL}}\"\n      },\n      \"author\": {\n        \"@type\": \"Person\",\n        \"name\": \"{{Author_Name}}\",\n        \"url\": \"{{Author_Link}}\"\n      },\n      \"publisher\": {\n        \"@id\": \"{{Business_URL}}#business\"\n      },\n      \"mainEntityOfPage\": {\n        \"@type\": \"WebPage\",\n        \"@id\": \"{{Full_Post_URL}}\"\n      },\n      \"datePublished\": \"{{date_published}}\",\n      \"dateModified\": \"{{date_modified}}\"\n    },\n    {\n      \"@type\": \"LocalBusiness\",\n      \"@id\": \"{{Business_URL}}#business\",\n      \"name\": \"{{Business_Name}}\",\n      \"image\": \"{{Logo_URL}}\",\n      \"url\": \"{{Business_URL}}\",\n      \"telephone\": \"{{Phone_Number_Link}}\",\n      \"address\": {\n        \"@type\": \"PostalAddress\",\n        \"streetAddress\": \"{{Street_Address}}\",\n        \"addressLocality\": \"{{City}}\",\n        \"addressRegion\": \"{{Province}}\",\n        \"postalCode\": \"{{Postal_Code}}\",\n        \"addressCountry\": \"CA\"\n      },\n      \"openingHoursSpecification\": [\n        {\n          \"@type\": \"OpeningHoursSpecification\",\n          \"dayOfWeek\": {{Work_day}},\n          \"opens\": \"{{Open_Hour}}\",\n          \"closes\": \"{{Close_Hour}}\"\n        }\n      ],\n      \"sameAs\": [\n        {{SameAsList}}\n      ]\n    },\n    {\n      \"@type\": \"FAQPage\",\n      \"mainEntity\": [\n        { \"@type\": \"Question\", \"name\": \"{{FAQ1_Q}}\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"{{FAQ1_A}}\" } },\n        { \"@type\": \"Question\", \"name\": \"{{FAQ2_Q}}\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"{{FAQ2_A}}\" } },\n        { \"@type\": \"Question\", \"name\": \"{{FAQ3_Q}}\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"{{FAQ3_A}}\" } },\n        { \"@type\": \"Question\", \"name\": \"{{FAQ4_Q}}\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"{{FAQ4_A}}\" } },\n        { \"@type\": \"Question\", \"name\": \"{{FAQ5_Q}}\", \"acceptedAnswer\": { \"@type\": \"Answer\", \"text\": \"{{FAQ5_A}}\" } }\n      ]\n    },\n    {\n      \"@type\": \"BreadcrumbList\",\n      \"itemListElement\": [\n        { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"Home\", \"item\": \"{{Business_URL}}\" },\n        { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"Blog\", \"item\": \"{{Blog_URL}}\" },\n        { \"@type\": \"ListItem\", \"position\": 3, \"name\": \"{{Keyword}}\", \"item\": \"{{Full_Post_URL}}\" }\n      ]\n    },\n    {\n      \"@type\": \"Review\",\n      \"itemReviewed\": { \"@type\": \"Organization\", \"name\": \"{{Business_Name}}\" },\n      \"reviewRating\": { \"@type\": \"Rating\", \"ratingValue\": \"5\", \"bestRating\": \"5\" },\n      \"author\": { \"@type\": \"Person\", \"name\": \"{{Review_Author}}\" },\n      \"reviewBody\": \"{{Review_Quote}}\"\n    }\n  ]\n}\n</script>"
+      }
+    },
+    "add_extra_sections": {
+      "number": 24,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Append extra sections from runtime.extra_sections (AddExtraSections) before FAQ/ending blocks.",
+      "title_rewrite_rules": [
+        "Do not reuse original title verbatim; keep idea but rewrite as concise title ≤10 words",
+        "Inject Keyword naturally",
+        "Match Intent tone",
+        "Avoid generic labels like Summary/Overview/Conclusion"
+      ],
+      "structure": {
+        "paragraphs": 3,
+        "bullets": {
+          "min": 3,
+          "max": 5,
+          "with_strong_titles": true
+        }
+      },
+      "location_sensitive_rules": [
+        "If section is location/coverage themed and Target_Location exists: mention 2–3 neighbourhoods, 1–2 building types, 1 seasonal/local challenge; end with standardized nearby line.",
+        "If no location provided: skip local mentions completely."
+      ],
+      "templates": {
+        "html": "<section class=\"blog-section\">\n  <h2>{{ExtraSectionTitle}}</h2>\n\n  <p>{{ExtraSectionParagraph1}}</p>\n  <p>{{ExtraSectionParagraph2}}</p>\n  <p>{{ExtraSectionParagraph3}}</p>\n\n  <h3>{{ExtraSectionBulletsH3}}</h3>\n  <ul>\n    <li><strong>{{Bullet1_Title}}:</strong> {{Bullet1_Body}}</li>\n    <li><strong>{{Bullet2_Title}}:</strong> {{Bullet2_Body}}</li>\n    <li><strong>{{Bullet3_Title}}:</strong> {{Bullet3_Body}}</li>\n    <li><strong>{{Bullet4_Title}}:</strong> {{Bullet4_Body}}</li>\n    <li><strong>{{Bullet5_Title}}:</strong> {{Bullet5_Body}}</li>\n  </ul>\n</section>"
+      }
+    },
+    "hidden_metadata_block": {
+      "number": 25,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "Hidden meta block for backend reference when meta_fields true.",
+      "rendering": {
+        "html": "<pre style=\"display:none;\">...key: value...</pre>"
+      },
+      "guardrails": [
+        "Only render if Meta_fields == TRUE"
+      ],
+      "templates": {
+        "html": "{{#if Meta_fields == \"TRUE\"}}\n<pre style=\"display:none;\">\nMetadata Block: (for backend reference only, not visible on frontend)<br>\n🔚 Metadata Output (Required at End):<br>\nSlug: <slug>{{#if DynamicTitle}}{{DynamicTitle | slugify}}{{/if}}</slug><br>\nMeta Title: {{DynamicTitle}}<br>\nMeta Description: {{DynamicMetaDescription}}<br>\n------------<br>\nKeyword: {{Keyword}}<br>\nIntent: {{Intent}}<br>\nCompetition: {{Competition}}<br>\nTopicMode: {{TopicMode}}<br>\nTier: {{Tier}}<br>\nTarget Location: {{Target_Location}}<br>\n------------<br>\nFeature Image File Name: {{related to Keyword | lowercase | hyphenated}}.jpg<br>\nFeature Image Title: give Feature Image Title related to {{Keyword}}<br>\nFeature Image ALT: {{Keyword}} service available in {{Target_Location}}<br>\n------------<br>\nsocial_heading: {{SocialHeading}}<br>\nsocial_subheading: {{SocialSubheading}}<br>\nintro_copy: {{IntoCopy}}<br>\n</pre>\n{{/if}}"
+      }
+    },
+    "quick_facts": {
+      "number": 26,
+      "supports": [
+        "blog",
+        "page"
+      ],
+      "purpose": "TL;DR quick facts card (60–90 words target) with 5 bullets: What/Who/Where/How/Why.",
+      "rendering": {
+        "html": "<section class=\"key-facts facts-card\" ...>...</section>"
+      },
+      "rules": [
+        "Use short fragments but clear meaning",
+        "Use Target_Location only if provided"
+      ],
+      "templates": {
+        "html": "<section class=\"key-facts facts-card\" role=\"complementary\" aria-label=\"Quick facts\" data-tldr=\"true\" data-word-target=\"60-90\">\n  <h2>{{nth [\"Quick Facts\" \"At a Glance\" \"Fast Snapshot\" \"Need-to-Know\" \"Key Points\"] (random 0 4)}}: {{Keyword}} in {{Target_Location}}</h2>\n\n  {{!-- Natural, human intro (one line) --}}\n  {{IntroLine = (nth [\n    \"If you’re skimming, start here.\"\n    \"The short version — in plain terms.\"\n    \"What matters most, without the fluff.\"\n    \"A quick look before you dive in.\"\n    \"The essentials at a glance.\"\n    \"{{Keyword}} in {{Target_Location}}, in simple terms.\"\n  ] (random 0 5))}}\n  <p class=\"key-facts-intro\">{{IntroLine}}</p>\n\n  {{!-- TL;DR bullets --}}\n  <ul>\n    <li><strong>What:</strong> {{write a single concise fragment that plainly defines {{Keyword}} for this page’s audience; include 1–2 concrete tasks or areas (e.g., floors, washrooms, touchpoints).}}</li>\n    <li><strong>Who:</strong> {{fragment naming the team (trained local crews), supervision/backup, and a simple trust signal (e.g., 24/7 support, WHMIS/PPE).}}</li>\n    <li><strong>Where:</strong> {{fragment naming 3–4 recognizable {{Target_Location}} hubs/areas relevant to the scenario.}}</li>\n    <li><strong>How:</strong> {{fragment listing 3–4 methods/tools (e.g., day porters, nightly resets, ATP checks, HEPA, color-coding).}}</li>\n    <li><strong>Why:</strong> {{fragment stating 3 outcomes clients care about (e.g., fewer complaints, safer floors, smoother ops).}}</li>\n  </ul>\n</section>"
+      }
+    },
+    "award_winning": {
+      "number": 27,
+      "supports": [
+        "page",
+        "blog"
+      ],
+      "purpose": "Award-winning provider section (client-specific) highlighting reliability and quality with short subheadings.",
+      "rendering": {
+        "html": "<section class=\"blog-section award-winning\">...</section>"
+      },
+      "constraints": {
+        "h2_max_words": 10,
+        "subheadings_count": 3
+      },
+      "templates": {
+        "html": "<section class=\"blog-section award-winning\">\n  <h2>{{AwardWinningH2}}</h2>\n\n  <p>{{AwardWinningIntro}}</p>\n\n  <h3>{{AwardWinningH3_1}}</h3>\n  <p>{{AwardWinningP_1}}</p>\n\n  <h3>{{AwardWinningH3_2}}</h3>\n  <p>{{AwardWinningP_2}}</p>\n\n  <h3>{{AwardWinningH3_3}}</h3>\n  <p>{{AwardWinningP_3}}</p>\n\n  <p>{{AwardWinningClose}}</p>\n</section>"
+      }
+    }
+  }
+}

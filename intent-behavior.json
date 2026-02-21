@@ -1,0 +1,219 @@
+{
+  "Informational": {
+    "description": "Explain the topic clearly so a non-expert can understand and feel confident. Priority: education, clarity, empathy.",
+    "tone": {
+      "overall": "educational, calm, friendly, reassuring",
+      "voice_notes": [
+        "Avoid sales-heavy language.",
+        "Use simple, direct sentences with occasional longer lines for rhythm.",
+        "Sound like a patient expert explaining to a homeowner or small business owner."
+      ]
+    },
+    "cta_style": {
+      "strength": "soft",
+      "allowed_phrases": [
+        "Learn more about your options.",
+        "Explore services that fit your situation.",
+        "Reach out if you’d like tailored advice."
+      ],
+      "avoid_words": [
+        "book now",
+        "get a quote today",
+        "limited-time offer"
+      ]
+    },
+    "intro_style": {
+      "focus": "context and explanation, not fear or pain.",
+      "openers": [
+        "Many people aren’t sure where to start when they hear terms like this.",
+        "It often helps to see how this works in everyday situations.",
+        "A clear explanation can make decisions feel a lot less stressful."
+      ]
+    },
+    "faq_style": {
+      "tone": "neutral and helpful",
+      "rules": [
+        "Focus on how/when/where rather than selling.",
+        "Mention target_location in at least 2 answers when provided.",
+        "Keep answers practical and concrete, no fluff."
+      ]
+    },
+    "section_emphasis": {
+      "strong_sections": [
+        "core_topic_explainer",
+        "local_fit",
+        "how_to_or_checklist",
+        "faq",
+        "stats"
+      ],
+      "optional_sections": [
+        "case_study",
+        "emotional_fit",
+        "comparison"
+      ]
+    },
+    "allow_pricing_language": false
+  },
+  "Commercial": {
+    "description": "Help the reader compare options and feel confident choosing this provider. Priority: trust, benefits, differentiation.",
+    "tone": {
+      "overall": "professional, persuasive but grounded, decision-aid",
+      "voice_notes": [
+        "Highlight outcomes and trust signals without hype.",
+        "Use real-feeling examples and scenarios instead of generic claims.",
+        "Balance expertise with empathy for budget and comfort concerns."
+      ]
+    },
+    "cta_style": {
+      "strength": "medium",
+      "allowed_phrases": [
+        "Request a personalized plan.",
+        "Talk with our team about what fits your home.",
+        "Plan your next upgrade with a specialist."
+      ],
+      "avoid_words": [
+        "act now before it’s too late",
+        "don’t miss out",
+        "limited-time offer"
+      ]
+    },
+    "intro_style": {
+      "focus": "benefits, clarity, and helping the reader avoid bad decisions.",
+      "openers": [
+        "The right choice here can shape your comfort and costs for years.",
+        "Many homeowners only discover the differences after they’ve already installed a system.",
+        "A bit of guidance upfront can help you avoid expensive regrets later."
+      ]
+    },
+    "faq_style": {
+      "tone": "trust-building and practical",
+      "rules": [
+        "Address real buying questions: reliability, warranty, service quality.",
+        "Mention target_location when explaining how service works locally.",
+        "Keep answers honest and realistic about timelines and expectations."
+      ]
+    },
+    "section_emphasis": {
+      "strong_sections": [
+        "comparison",
+        "emotional_fit",
+        "local_fit",
+        "case_study",
+        "how_to_or_checklist",
+        "trust_cta"
+      ],
+      "optional_sections": [
+        "stats",
+        "trends"
+      ]
+    },
+    "allow_pricing_language": true
+  },
+  "Transactional": {
+    "description": "Help the reader move quickly toward booking, pricing, or a quote while still feeling informed and safe.",
+    "tone": {
+      "overall": "direct, reassuring, action-focused",
+      "voice_notes": [
+        "Use clear language about next steps (quote, booking, inspection).",
+        "Emphasize speed, safety, and clarity on what happens after they contact you.",
+        "Avoid pressure; focus on removing friction and uncertainty."
+      ]
+    },
+    "cta_style": {
+      "strength": "strong",
+      "allowed_phrases": [
+        "Get a fast estimate for your home.",
+        "Book a visit that fits your schedule.",
+        "Request your quote and next steps."
+      ],
+      "avoid_words": [
+        "act now before it’s too late",
+        "don’t miss out",
+        "limited-time offer"
+      ]
+    },
+    "intro_style": {
+      "focus": "time, urgency, clarity on process.",
+      "openers": [
+        "If you’re ready to see real numbers and next steps, the process can be straightforward.",
+        "When comfort or safety is already at stake, waiting often makes the situation harder.",
+        "The sooner you understand your options and costs, the easier it is to decide."
+      ]
+    },
+    "faq_style": {
+      "tone": "process and logistics focused",
+      "rules": [
+        "Answer questions about timelines, visit length, prep, and what’s included.",
+        "Mention target_location when talking about service coverage.",
+        "Keep answers clear and concise, avoiding jargon."
+      ]
+    },
+    "section_emphasis": {
+      "strong_sections": [
+        "intro_with_next_steps",
+        "local_fit",
+        "simple_process_steps",
+        "trust_cta",
+        "faq"
+      ],
+      "optional_sections": [
+        "comparison",
+        "case_study"
+      ]
+    },
+    "allow_pricing_language": true
+  },
+  "Navigational": {
+    "description": "Guide the reader to understand who this business is, where it operates, and how to contact or learn more.",
+    "tone": {
+      "overall": "confident, brand-focused, helpful",
+      "voice_notes": [
+        "Make it clear what the brand does and who it’s for.",
+        "Highlight local presence and experience.",
+        "Use friendly, professional language that builds trust quickly."
+      ]
+    },
+    "cta_style": {
+      "strength": "medium",
+      "allowed_phrases": [
+        "Contact our team in your area.",
+        "Call or email us to talk through your situation.",
+        "Visit our service pages to see what fits your property."
+      ],
+      "avoid_words": [
+        "limited-time offer",
+        "act now before it’s too late"
+      ]
+    },
+    "intro_style": {
+      "focus": "brand clarity, service overview, and how to start.",
+      "openers": [
+        "If you’re trying to confirm whether this team is the right fit, here’s how we work.",
+        "A quick look at who we are and how we help can make your next step easier.",
+        "This overview explains what we do, where we work, and how to reach us."
+      ]
+    },
+    "faq_style": {
+      "tone": "about the business and its processes",
+      "rules": [
+        "Cover hours, areas served, response times, and contact options.",
+        "Mention target_location and other key cities in service_area if available.",
+        "Keep tone courteous and confident."
+      ]
+    },
+    "section_emphasis": {
+      "strong_sections": [
+        "brand_overview",
+        "local_fit",
+        "services_summary",
+        "case_study_or_social_proof",
+        "contact_paths"
+      ],
+      "optional_sections": [
+        "how_to_or_checklist",
+        "stats"
+      ]
+    },
+    "allow_pricing_language": false
+  }
+}

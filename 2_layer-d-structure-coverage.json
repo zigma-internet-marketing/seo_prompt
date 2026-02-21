@@ -1,0 +1,234 @@
+{
+  "layer": "D",
+  "name": "Blog Post Structure & Coverage",
+  "scope_note": "Structural and quantitative guidance for long-form content",
+  "purpose": "Define how content should be structured and scoped to meet modern search expectations without relying on outdated SEO formulas. All numeric ranges are guidance only and never optimization targets.",
+  "overriding_principle": "Completeness, clarity, and usefulness always override counts, ranges, or formulas.",
+  "rules": {
+    "1_blog_post_length": {
+      "description": "Word count ranges based on topic complexity.",
+      "guidance_ranges": {
+        "short_topics": "800–1,200 words",
+        "standard_informational": "1,200–2,000 words",
+        "complex_decision_or_ymyl": "1,800–3,000 words"
+      },
+      "notes": [
+        "Ranges are guidance, not targets",
+        "Content completeness overrides word count"
+      ],
+      "considerations": [
+        "Topic complexity",
+        "Whether all reasonable sub-questions are answered"
+      ],
+      "prohibitions": [
+        "Writing long posts to hit a number",
+        "Padding content with filler",
+        "Forcing ultimate-guide length for simple queries"
+      ],
+      "rule_of_thumb": "If removing 20% of the content does not reduce value, the post is too long."
+    },
+    "2_primary_keyword_usage": {
+      "description": "Use the main keyword naturally and sparingly.",
+      "typical_usage": [
+        "Once in the title",
+        "Once in the H1",
+        "Once in the introductory answer",
+        "A few times naturally in the body"
+      ],
+      "considerations": [
+        "Search engines understand topics, not repetition",
+        "The keyword should feel inevitable, not forced"
+      ],
+      "prohibitions": [
+        "Setting keyword density targets",
+        "Repeating the keyword in every heading",
+        "Forcing exact-match phrasing"
+      ],
+      "rule_of_thumb": "If the keyword is removed and the article still makes sense, usage is correct."
+    },
+    "3_secondary_keywords": {
+      "description": "Secondary keywords act as section drivers, not fillers.",
+      "mapping_requirements": [
+        "Subsection",
+        "Question",
+        "Comparison",
+        "Explanation"
+      ],
+      "considerations": [
+        "Secondary keywords reflect related user questions",
+        "Often sourced from PAA, related searches, or internal data"
+      ],
+      "prohibitions": [
+        "Listing keywords unnaturally",
+        "Forcing exact phrasing",
+        "Unnecessary repetition"
+      ],
+      "rule_of_thumb": "Each secondary keyword must add information, not decorate text."
+    },
+    "4_synonyms_semantic_variation": {
+      "description": "Use natural language variation focused on concepts, not word swapping.",
+      "considerations": [
+        "Modern search systems understand meaning clusters",
+        "Overuse of synonyms appears manipulative"
+      ],
+      "prohibitions": [
+        "Intentional synonym rotation",
+        "Using SEO synonym lists"
+      ],
+      "rule_of_thumb": "If a human would not consciously vary the phrase, do not."
+    },
+    "5_ideal_section_structure": {
+      "description": "Recommended modern structure for informational and AI-eligible content.",
+      "sections": [
+        {
+          "order": 1,
+          "name": "Direct Answer / Definition",
+          "required": true,
+          "requirements": [
+            "3–5 sentences",
+            "Fully answers the query",
+            "AI-liftable"
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Context & Scope",
+          "requirements": [
+            "Who this applies to",
+            "When it applies",
+            "When it does not"
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Explanation / Mechanism",
+          "requirements": [
+            "How it works",
+            "Why it happens",
+            "Causes and effects"
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Practical Implications",
+          "requirements": [
+            "What this means for the reader",
+            "Risks, benefits, and considerations"
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Common Questions / Scenarios",
+          "requirements": [
+            "What if scenarios",
+            "Does this mean questions",
+            "What happens when cases"
+          ],
+          "alignment": [
+            "People Also Ask",
+            "AI Overviews"
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Warnings, Limits, Exceptions",
+          "requirements": [
+            "Legal boundaries",
+            "Safety considerations",
+            "Ethical limits"
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Summary & Takeaways",
+          "requirements": [
+            "Bullet-point recap",
+            "Clear next step (not sales-driven)"
+          ]
+        }
+      ]
+    },
+    "6_heading_strategy": {
+      "description": "Headings should clearly communicate what is answered.",
+      "best_practices": [
+        "Descriptive headings",
+        "Many H2s framed as questions",
+        "H3s used for logical breakdowns"
+      ],
+      "prohibitions": [
+        "Keyword-stuffed headings",
+        "Vague headings (e.g., Overview, Details)"
+      ]
+    },
+    "7_lists_tables_formatting": {
+      "description": "Use structured formatting where it improves clarity.",
+      "best_practices": [
+        "Lists for steps, factors, and comparisons",
+        "Tables for pros and cons or side-by-side differences"
+      ],
+      "prohibitions": [
+        "Using tables for decoration",
+        "Hiding key answers inside long paragraphs"
+      ]
+    },
+    "8_internal_content_balance": {
+      "description": "Maintain educational focus in informational posts.",
+      "best_practices": [
+        "Deliver value before CTAs"
+      ],
+      "prohibitions": [
+        "Interrupting learning with CTAs",
+        "Turning blog posts into landing pages"
+      ]
+    },
+    "9_media_usage": {
+      "description": "Media should clarify meaning when helpful.",
+      "best_practices": [
+        "Diagrams",
+        "Simple visuals",
+        "Clarifying images"
+      ],
+      "prohibitions": [
+        "Adding images solely for SEO",
+        "Overloading pages with visuals"
+      ]
+    },
+    "10_metrics_not_to_track": {
+      "description": "Outdated optimization metrics that must not be used.",
+      "do_not_optimize_for": [
+        "Keyword density",
+        "Exact keyword counts",
+        "Fixed H2 numbers",
+        "LSI keyword lists",
+        "Writing for bots"
+      ]
+    },
+    "11_format_compliance_structural_consistency": {
+      "description": "Respect the requested output format and apply structure consistently.",
+      "best_practices": [
+        "Follow specified output format exactly",
+        "Apply headings, lists, and spacing consistently",
+        "Ensure formatting supports clarity and downstream use"
+      ],
+      "prohibitions": [
+        "Mixing formats in the same output",
+        "Breaking structure mid-document",
+        "Inconsistent formatting across sections"
+      ]
+    },
+    "12_keyword_coverage_conceptual_mapping": {
+      "description": "Keywords represent concepts to be meaningfully addressed, not repetition targets.",
+      "best_practices": [
+        "Map each keyword to a meaningful idea or section",
+        "Introduce keywords only where contextually relevant",
+        "Allow terminology to appear naturally"
+      ],
+      "prohibitions": [
+        "Tracking keyword density",
+        "Forcing keywords into headings or sentences",
+        "Inserting keywords without adding information",
+        "Treating keyword lists as writing prompts"
+      ]
+    }
+  }
+}

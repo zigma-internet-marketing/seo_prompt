@@ -1,0 +1,166 @@
+{
+  "version": "4.0.0",
+  "last_updated": "2026-01-27",
+  "scope": "TopicMode behavior only. Each mode defines title patterns + which body sections are eligible, plus practical writing guidance (goal/tone/focus).",
+  "topic_modes": {
+    "ExplainGuide": {
+      "goal": "Explain the topic clearly, then guide the reader to a confident next step with practical decision criteria.",
+      "tone": "Grounded, helpful, professional. No hype. Use gentle hedging and realistic ranges when relevant.",
+      "focus": [
+        "Plain-language explanation + how it works in practice",
+        "Decision factors (cost, timeline, risk, maintenance, quality signals)",
+        "One honest comparison (DIY vs pro, basic vs premium, short-term vs long-term)"
+      ],
+      "title_example": [
+        "{Keyword}: what to expect, costs, and smarter choices",
+        "A practical guide to {Keyword} (without the sales pitch)",
+        "{Keyword} made simple: how it works, what matters, what to avoid"
+      ],
+      "eligible_sections": [
+        "local_service_fit",
+        "experts_wish_you_knew",
+        "honest_insights_from_industry",
+        "comparison_accordion",
+        "dynamic_strategy_list_howto",
+        "emotional_value_fit",
+        "stats_block",
+        "quick_facts",
+        "video_embed",
+        "image_handling_optional"
+      ]
+    },
+    "Comparison": {
+      "goal": "Help the reader choose between 2–3 clear options by showing trade-offs and best-fit scenarios.",
+      "tone": "Decision-support, calm, specific. Avoid definitive guarantees; recommend by scenario.",
+      "focus": [
+        "Option A vs B vs C with trade-offs",
+        "Fit-by-scenario recommendations (budget, urgency, property type, constraints)",
+        "Make the comparison section the anchor of the body"
+      ],
+      "title_example": [
+        "{Keyword}: Option A vs Option B vs Option C",
+        "Comparing {Keyword} options: trade-offs, costs, and best-fit scenarios",
+        "{Keyword} vs {AltKeyword}: which makes sense for your situation?"
+      ],
+      "eligible_sections": [
+        "local_service_fit",
+        "comparison_accordion",
+        "case_study",
+        "honest_insights_from_industry",
+        "trust_building_cta",
+        "stats_block",
+        "quick_facts",
+        "video_embed",
+        "image_handling_optional",
+        "final_soft_close"
+      ]
+    },
+    "ChecklistSteps": {
+      "goal": "Give the reader a clear set of steps/checklist items they can follow to reduce mistakes and surprises.",
+      "tone": "Practical, directive but not aggressive. Explain consequences without fear-mongering.",
+      "focus": [
+        "Section 14 is the anchor (steps/checklist)",
+        "Each step includes what/why/how + a short example",
+        "Call out what can go wrong if a step is skipped"
+      ],
+      "title_example": [
+        "The {Keyword} checklist: what to do before you commit",
+        "{N} steps to get {Keyword} right the first time",
+        "A practical {Keyword} checklist for fewer surprises"
+      ],
+      "eligible_sections": [
+        "local_service_fit",
+        "dynamic_strategy_list_howto",
+        "honest_insights_from_industry",
+        "experts_wish_you_knew",
+        "trust_building_cta",
+        "stats_block",
+        "quick_facts",
+        "video_embed",
+        "image_handling_optional"
+      ]
+    },
+    "FAQDriven": {
+      "goal": "Answer the real questions people have, using natural question-style H2s, then close with the formal FAQ block.",
+      "tone": "Conversational-professional, scenario-based, no lecture voice.",
+      "focus": [
+        "Use question-shaped H2s for key body sections (avoid 'What is X?' phrasing where possible)",
+        "Answer in short paragraphs with micro-scenarios",
+        "Avoid repeating body questions in the final FAQ block"
+      ],
+      "title_example": [
+        "{Keyword} questions people actually ask (with clear answers)",
+        "When does {Keyword} make sense? Answers to the real questions",
+        "{Keyword} explained through real scenarios and common questions"
+      ],
+      "eligible_sections": [
+        "local_service_fit",
+        "dynamic_strategy_list_howto",
+        "experts_wish_you_knew",
+        "honest_insights_from_industry",
+        "quick_facts",
+        "video_embed",
+        "image_handling_optional",
+        "stats_block"
+      ]
+    },
+    "CaseStory": {
+      "goal": "Use a believable case narrative early to create clarity and trust, then generalize into guidance and next steps.",
+      "tone": "Story-led but restrained; realistic timeline and outcomes; avoid dramatic language.",
+      "focus": [
+        "Case study provides context (who, problem, approach, outcome, lesson)",
+        "Pull 3–5 lessons from the story (often via Section 14)",
+        "Connect outcomes back to decision criteria the reader can use"
+      ],
+      "title_example": [
+        "How one {ClientType} improved outcomes with {Keyword}",
+        "A real-world {Keyword} story: from problem to outcome",
+        "What changed after {Keyword} was done properly (a real case)"
+      ],
+      "eligible_sections": [
+        "local_service_fit",
+        "case_study",
+        "trust_building_cta",
+        "dynamic_strategy_list_howto",
+        "honest_insights_from_industry",
+        "experts_wish_you_knew",
+        "stats_block",
+        "video_embed",
+        "image_handling_optional",
+        "final_soft_close"
+      ]
+    },
+    "MistakesMyths": {
+      "goal": "Prevent costly errors by surfacing common mistakes and myths, then replace them with clear fixes.",
+      "tone": "Protective, non-judgmental, direct. No shaming.",
+      "focus": [
+        "Each mistake/myth includes consequence + better alternative",
+        "Use 'hidden truths' to add insider realism when appropriate",
+        "End with practical fixes (often via Section 14)"
+      ],
+      "title_example": [
+        "Common {Keyword} mistakes (and what to do instead)",
+        "{Keyword} myths vs reality: what actually holds up",
+        "{N} {Keyword} pitfalls that quietly raise costs"
+      ],
+      "eligible_sections": [
+        "local_service_fit",
+        "hidden_truths_from_industry",
+        "honest_insights_from_industry",
+        "dynamic_strategy_list_howto",
+        "case_study",
+        "comparison_accordion",
+        "trust_building_cta",
+        "stats_block",
+        "quick_facts",
+        "video_embed",
+        "image_handling_optional"
+      ]
+    }
+  },
+  "placeholders": {
+    "N": "An integer (usually 5–12) chosen by the engine when a numbered title is used.",
+    "AltKeyword": "Optional comparison keyword or close alternative, only when it reads naturally.",
+    "ClientType": "A realistic audience/client label derived from client profile (e.g., homeowner, clinic, property manager)."
+  }
+}

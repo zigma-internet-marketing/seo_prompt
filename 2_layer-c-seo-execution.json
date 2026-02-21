@@ -1,0 +1,217 @@
+{
+  "layer": "C",
+  "name": "Post-Content SEO Optimization",
+  "scope_note": "How search engines crawl, interpret, rank, and distribute already-written content",
+  "purpose": "Ensure search engines can efficiently crawl, understand, and rank content after it is written, without changing the core message, intent, or tone.",
+  "application_timing": "Apply only after content creation is complete.",
+  "core_principle": "Layer C focuses on execution and alignment, not writing quality or persuasion.",
+  "rules": {
+    "1_correct_search_intent_mapping": {
+      "description": "Confirm the page targets the correct dominant search intent.",
+      "apply_after_writing": [
+        "Verify dominant SERP intent for the primary keyword",
+        "Ensure page format matches top-ranking results"
+      ],
+      "prohibitions": [
+        "Forcing transactional keywords into informational content",
+        "Targeting multiple intents on a single URL"
+      ]
+    },
+    "2_optimized_title_tag": {
+      "description": "Title tag should clearly reflect the primary value or answer.",
+      "best_practices": [
+        "One primary keyword",
+        "Clear clarification or benefit",
+        "Natural, readable phrasing"
+      ],
+      "prohibitions": [
+        "Keyword lists",
+        "Repeating the same phrase multiple times"
+      ]
+    },
+    "3_optimized_meta_description_ctr_focused": {
+      "description": "Meta description reinforces value and outcome, not a full summary.",
+      "best_practices": [
+        "Preview the answer or result",
+        "Match on-page content exactly",
+        "Encourage the correct click"
+      ],
+      "prohibitions": [
+        "Clickbait",
+        "Promises the content does not deliver"
+      ]
+    },
+    "4_proper_heading_hierarchy": {
+      "description": "Headings communicate structure, not SEO manipulation.",
+      "best_practices": [
+        "One H1 per page",
+        "Logical H2 to H3 progression",
+        "Descriptive, intent-aligned headings"
+      ],
+      "prohibitions": [
+        "Multiple H1s",
+        "Keyword-stuffed headings"
+      ]
+    },
+    "5_internal_linking_contextual": {
+      "description": "Internal links support understanding and navigation.",
+      "best_practices": [
+        "Link to parent and supporting topics",
+        "Use descriptive, natural anchor text"
+      ],
+      "prohibitions": [
+        "Sitewide keyword anchors",
+        "Irrelevant or forced links"
+      ]
+    },
+    "6_url_structure_slug_optimization": {
+      "description": "URLs should be readable, stable, and intent-aligned.",
+      "best_practices": [
+        "Lowercase",
+        "Hyphenated",
+        "One primary keyword"
+      ],
+      "prohibitions": [
+        "Dates unless required",
+        "Changing URLs after indexing"
+      ]
+    },
+    "7_schema_markup_supportive": {
+      "description": "Schema clarifies content for machines; it does not directly rank content.",
+      "best_practices": [
+        "Article or BlogPosting schema",
+        "FAQ schema only when FAQs exist",
+        "Author and Organization where relevant"
+      ],
+      "prohibitions": [
+        "Fake FAQs",
+        "Overuse of schema types"
+      ]
+    },
+    "8_image_optimization": {
+      "description": "Images should support understanding and accessibility.",
+      "best_practices": [
+        "Descriptive ALT text",
+        "Compressed file sizes",
+        "Relevant filenames"
+      ],
+      "prohibitions": [
+        "Keyword-stuffed ALT text",
+        "Decorative images used as SEO signals"
+      ]
+    },
+    "9_core_web_vitals_page_experience": {
+      "description": "Strong content must not be undermined by poor UX.",
+      "best_practices": [
+        "Fast load times",
+        "Stable layouts",
+        "Mobile-friendly design"
+      ],
+      "prohibitions": [
+        "Heavy scripts",
+        "Popups that block content"
+      ]
+    },
+    "10_crawl_indexation_control": {
+      "description": "Ensure pages are discoverable and indexable.",
+      "best_practices": [
+        "Correct canonical tags",
+        "Indexable status",
+        "Inclusion in XML sitemaps"
+      ],
+      "prohibitions": [
+        "Accidental noindex tags",
+        "Duplicate content issues"
+      ]
+    },
+    "11_eeat_support_signals": {
+      "description": "Content should align with site-level trust indicators.",
+      "best_practices": [
+        "Clear author information",
+        "About page presence",
+        "Accessible contact details"
+      ],
+      "prohibitions": [
+        "Anonymous content on sensitive or YMYL topics"
+      ]
+    },
+    "12_topical_authority_reinforcement": {
+      "description": "Each page should exist within a clear topical cluster.",
+      "best_practices": [
+        "Hub-and-spoke internal linking",
+        "Consistent topic coverage"
+      ],
+      "prohibitions": [
+        "Orphan pages",
+        "Random, unrelated publishing"
+      ]
+    },
+    "13_serp_feature_compatibility": {
+      "description": "Structure content to qualify for enhanced SERP features.",
+      "features_supported": [
+        "Featured snippets",
+        "AI Overviews",
+        "People Also Ask"
+      ],
+      "best_practices": [
+        "Clear definitions",
+        "Lists and steps",
+        "Concise explanations"
+      ],
+      "prohibitions": [
+        "Overly long answers",
+        "Ambiguous phrasing"
+      ]
+    },
+    "14_content_freshness": {
+      "description": "Freshness matters only for time-sensitive topics.",
+      "best_practices": [
+        "Update facts and insights",
+        "Improve clarity over time"
+      ],
+      "prohibitions": [
+        "Artificially updating publish dates",
+        "Freshness for freshness’ sake"
+      ]
+    },
+    "15_monitoring_iteration": {
+      "description": "SEO performance should be observed and refined over time.",
+      "best_practices": [
+        "Monitor rankings",
+        "Track AI Overview and snippet appearances",
+        "Improve clarity and structure where needed"
+      ],
+      "prohibitions": [
+        "Overreacting to short-term fluctuations"
+      ]
+    },
+    "16_meta_description_best_practices": {
+      "description": "Meta descriptions help users and search engines assess relevance and value.",
+      "best_practices": [
+        "Approximately 130–155 characters",
+        "Primary topic appears naturally early",
+        "Close alignment with on-page content"
+      ],
+      "prohibitions": [
+        "Rigid formulas",
+        "Forced keyword placement",
+        "Promises not delivered by content",
+        "Clickbait or exaggerated claims"
+      ]
+    },
+    "17_internal_linking_intent_aligned": {
+      "description": "Internal links should support comprehension and hierarchy.",
+      "best_practices": [
+        "Add links where they provide contextual clarity",
+        "Use natural, descriptive anchors",
+        "Prioritize relevance over quantity"
+      ],
+      "prohibitions": [
+        "Links inserted solely for SEO",
+        "Interrupting informational flow",
+        "Repetitive or keyword-stuffed anchors",
+        "Fixed link count or placement quotas"
+      ]
+    }
+  }
+}

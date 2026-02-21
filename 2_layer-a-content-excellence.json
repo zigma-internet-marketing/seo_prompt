@@ -1,0 +1,295 @@
+{
+  "layer": "A",
+  "name": "Content Excellence",
+  "scope_note": "What the content says and how it is written",
+  "purpose": "Ensure content is genuinely useful, accurate, complete, and trustworthy for a human reader, focusing on intent satisfaction, clarity, depth, and responsibility independent of SEO mechanics or stylistic polish.",
+  "core_question": "Does this content fully resolve the user’s reason for searching?",
+  "rules": {
+    "1_satisfy_one_dominant_intent": {
+      "description": "Content must fully serve one primary reason the user searched, not multiple.",
+      "example": {
+        "query": "What is raccoon baby season?",
+        "correct": "Explains timing, behavior, risks, and what homeowners should know.",
+        "incorrect": "Explains season + pricing + sales pitch + booking CTAs."
+      },
+      "considerations": [
+        "What question must be resolved for the reader to feel done",
+        "Reader emotional state (confused, worried, researching, deciding)"
+      ],
+      "prohibitions": [
+        "Mix informational and transactional intent",
+        "Try to rank for adjacent intents on the same page"
+      ]
+    },
+    "2_answer_the_query_immediately": {
+      "description": "The first paragraph should fully answer the main question in plain language.",
+      "example": "Raccoon baby season in Ontario typically runs from March to June, when mother raccoons seek sheltered spaces like attics to give birth and raise kits.",
+      "considerations": [
+        "Could the first paragraph stand alone in search results?",
+        "Would removing the rest still answer the question?"
+      ],
+      "prohibitions": [
+        "Start with history, storytelling, or 'In this article…'",
+        "Delay the answer for engagement tricks"
+      ]
+    },
+    "3_define_scope_applicability": {
+      "description": "Explain who this applies to, when it applies, and when it does not.",
+      "example": "This applies to detached and semi-detached homes; condos typically face different risks.",
+      "considerations": [
+        "Geography",
+        "Time or seasonality",
+        "Property type",
+        "Experience level"
+      ],
+      "prohibitions": [
+        "Universal claims (always, everyone, guaranteed)",
+        "Ignoring exceptions or edge cases"
+      ]
+    },
+    "4_demonstrate_experience_or_expertise": {
+      "description": "Show how the knowledge was gained through experience, observation, or practice; must be plausible.",
+      "example": "After inspecting hundreds of attics during spring months, we consistently see…",
+      "considerations": [
+        "Specificity builds trust",
+        "Experience does not require credentials, but must be plausible"
+      ],
+      "prohibitions": [
+        "Vague authority (experts say)",
+        "Sounding like a rewritten encyclopedia"
+      ]
+    },
+    "5_define_key_terms": {
+      "description": "Every important term must be clearly explained, not assumed.",
+      "example": "Raccoon ‘kits’ are newborn raccoons that remain dependent on their mother for 8–10 weeks.",
+      "considerations": [
+        "First-time readers",
+        "Industry or technical jargon"
+      ],
+      "prohibitions": [
+        "Assuming prior knowledge",
+        "Using unexplained acronyms or slang"
+      ]
+    },
+    "6_explain_mechanism": {
+      "description": "Explain why and how, not just what.",
+      "example": "Mother raccoons choose attics because they provide warmth, protection, and minimal disturbance.",
+      "considerations": [
+        "Cause → effect → outcome",
+        "Logical reasoning"
+      ],
+      "prohibitions": [
+        "Listing facts without explanation",
+        "Skipping reasoning steps"
+      ]
+    },
+    "7_logical_content_flow": {
+      "description": "Content should progress naturally: Answer → Explain → Apply → Validate → Summarize.",
+      "example_flow": [
+        "What it is",
+        "Why it happens",
+        "What it causes",
+        "What to do",
+        "Key takeaways"
+      ],
+      "considerations": [
+        "Would a reader get lost?",
+        "Does each section build on the last?"
+      ],
+      "prohibitions": [
+        "Random jumps between ideas",
+        "Unrelated sections inserted for SEO"
+      ]
+    },
+    "8_actionable_value_without_selling": {
+      "description": "Readers should know what to do next, even if that means doing nothing.",
+      "example": "If activity is suspected before babies are born, early inspection prevents complications.",
+      "considerations": [
+        "Practical, safe guidance",
+        "Decision support"
+      ],
+      "prohibitions": [
+        "Sales pushes inside informational sections",
+        "Replacing guidance with CTAs"
+      ]
+    },
+    "9_include_warnings_limits_exceptions": {
+      "description": "Responsible content acknowledges risk and uncertainty.",
+      "example": "Removing a mother raccoon during baby season can trap kits inside the attic.",
+      "considerations": [
+        "Safety",
+        "Legal implications",
+        "Ethical responsibility"
+      ],
+      "prohibitions": [
+        "Oversimplifying complex situations",
+        "Encouraging risky DIY actions"
+      ]
+    },
+    "10_be_complete_for_topic": {
+      "description": "Answer all major sub-questions related to the query.",
+      "example_topic_coverage": {
+        "topic": "raccoon baby season",
+        "must_cover": [
+          "Timing",
+          "Behavior",
+          "Risks",
+          "Signs",
+          "What homeowners should know"
+        ]
+      },
+      "considerations": [
+        "Follow-up questions readers will ask",
+        "Competitor coverage gaps"
+      ],
+      "prohibitions": [
+        "Intentionally leaving gaps",
+        "Adding filler to increase length"
+      ]
+    },
+    "11_skimmable_structured": {
+      "description": "Content must be easy to scan without losing meaning.",
+      "considerations": [
+        "Clear headings",
+        "Short paragraphs",
+        "Lists where helpful"
+      ],
+      "prohibitions": [
+        "Dense text blocks",
+        "Overuse of long paragraphs"
+      ]
+    },
+    "12_natural_human_language": {
+      "description": "Write like a knowledgeable human, not an SEO template.",
+      "example": "Most homeowners first notice scratching sounds at night.",
+      "considerations": [
+        "Conversational clarity",
+        "Calm, professional tone"
+      ],
+      "prohibitions": [
+        "Keyword stuffing",
+        "Unnatural repetition"
+      ]
+    },
+    "13_avoid_over_optimization": {
+      "description": "Optimization should be invisible; use primary terms naturally.",
+      "example": "Use the primary term naturally, not in every sentence.",
+      "prohibitions": [
+        "Forcing keywords into headings",
+        "Repeating concepts excessively"
+      ]
+    },
+    "14_reduce_user_uncertainty": {
+      "description": "Reader should feel more confident, not more confused.",
+      "example": "This behavior is normal during spring and doesn’t always indicate a full infestation.",
+      "prohibitions": [
+        "Open-ended conclusions",
+        "Creating unnecessary fear"
+      ]
+    },
+    "15_anticipate_follow_up_questions": {
+      "description": "Address obvious 'What about…?' questions proactively.",
+      "example": "What happens if babies are already born?",
+      "prohibitions": [
+        "Ignoring obvious next questions",
+        "Relying on internal links to finish the answer"
+      ]
+    },
+    "16_easily_summarizable_by_ai": {
+      "description": "AI systems should extract accurate summaries without distortion.",
+      "considerations": [
+        "Clear statements",
+        "Defined terms",
+        "No contradictions"
+      ],
+      "prohibitions": [
+        "Vague references (this, that)",
+        "Ambiguous conclusions"
+      ]
+    },
+    "17_unique_among_competitors": {
+      "description": "Content must not feel interchangeable.",
+      "considerations": [
+        "Original framing",
+        "Clearer explanations",
+        "Missing competitor angles"
+      ],
+      "prohibitions": [
+        "Rephrasing top-ranking articles",
+        "Mirroring competitor structure exactly"
+      ]
+    },
+    "18_site_level_topical_authority_alignment": {
+      "description": "Content should logically belong on the site publishing it.",
+      "example": "A wildlife company explaining animal behavior, not general biology theory.",
+      "prohibitions": [
+        "Publishing off-topic content",
+        "Chasing keywords unrelated to expertise"
+      ]
+    },
+    "19_ethical_responsible": {
+      "description": "Content must not encourage harm, deception, or unsafe actions.",
+      "example": "Advise professional help instead of dangerous DIY when warranted.",
+      "considerations": [
+        "Legal implications",
+        "Safety",
+        "Long-term trust"
+      ],
+      "prohibitions": [
+        "Reckless advice",
+        "Hiding risks"
+      ]
+    },
+    "20_end_with_clear_takeaways": {
+      "description": "Summarize what matters and what to do next.",
+      "example": {
+        "format": "Key things to remember",
+        "items": [
+          "Timing",
+          "Risks",
+          "Early action benefits"
+        ]
+      },
+      "prohibitions": [
+        "Ending abruptly",
+        "Replacing summary with a sales pitch"
+      ]
+    },
+    "21_no_unverified_pricing_or_cost_claims": {
+      "description": "Do not introduce pricing, cost ranges, fees, or financial expectations unless explicitly provided, contractually defined, or supported by verifiable industry disclosure.",
+      "rationale": "Pricing carries high trust and decision weight. If unknown, it must not be implied.",
+      "examples": {
+        "acceptable": [
+          "Pricing varies based on scope, frequency, and facility size.",
+          "Monthly service pricing starts at $X, depending on requirements. (when provided)"
+        ],
+        "not_acceptable": [
+          "Most services cost between $___ and $___ (without source or authorization)"
+        ]
+      },
+      "prohibitions": [
+        "Guessing or estimating pricing",
+        "Using vague cost language to imply affordability",
+        "Introducing financial ranges to increase conversion"
+      ]
+    },
+    "22_only_realistic_verifiable_data_stats": {
+      "description": "Any data, statistics, or numeric claims must be realistic, defensible, and aligned with commonly accepted industry knowledge or public sources. Never fabricate benchmarks, internal metrics, or client outcomes.",
+      "examples": {
+        "acceptable": [
+          "In many commercial environments, cleaning frequency ranges from daily to weekly depending on traffic.",
+          "Industry guidelines typically recommend…"
+        ],
+        "not_acceptable": [
+          "Our clients see a 42% improvement… (without verified source)"
+        ]
+      },
+      "prohibitions": [
+        "Inventing performance metrics",
+        "Attributing fabricated data to the business",
+        "Presenting speculation as measured results",
+        "Using overly precise numbers without sourcing"
+      ]
+    }
+  }
+}

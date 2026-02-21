@@ -1,0 +1,102 @@
+{
+  "layer": "B",
+  "name": "AI Extractability & Citation Readiness",
+  "scope_note": "How AI systems summarize, extract, and cite content",
+  "purpose": "Ensure content can be safely summarized, quoted, and reused by AI systems (search assistants, AI Overviews, copilots, voice answers) without distortion, misattribution, or loss of meaning.",
+  "principles": [
+    "AI systems prefer content where search intent, definitions, and entity relationships are clear early.",
+    "Clear intent signalling improves extraction accuracy and citation confidence."
+  ],
+  "rules": {
+    "1_definition_first_clarity": {
+      "description": "Key concepts must be defined plainly and early in the content.",
+      "example": "Raccoon baby season is the spring period when female raccoons give birth and raise kits.",
+      "disallowed": [
+        "Metaphorical or narrative intros",
+        "Vague descriptions before definitions"
+      ]
+    },
+    "2_standalone_answer_blocks": {
+      "description": "Important answers must make sense when read out of context.",
+      "example": "A paragraph that can be quoted independently without surrounding explanation.",
+      "disallowed": [
+        "Pronouns like “this”, “that”, “they”, or “it” without a clear antecedent",
+        "Answers that rely on earlier paragraphs for meaning"
+      ]
+    },
+    "3_explicit_entity_naming": {
+      "description": "Always use consistent, explicit names for important entities.",
+      "entities_include": [
+        "Brands",
+        "Locations",
+        "Products",
+        "Services",
+        "Audiences or roles"
+      ],
+      "example": "Toronto homeowners instead of local residents.",
+      "disallowed": [
+        "Switching terminology mid-article",
+        "Using vague substitutes once an entity is defined"
+      ]
+    },
+    "4_clear_entity_relationships": {
+      "description": "Explain how entities relate through cause, effect, dependency, or sequence.",
+      "example": "Cold spring temperatures delay raccoon den movement, increasing attic occupancy.",
+      "disallowed": [
+        "Listing facts without relationships",
+        "Leaving cause-and-effect implied"
+      ]
+    },
+    "5_low_ambiguity_language": {
+      "description": "Each sentence must have one clear interpretation.",
+      "disallowed": [
+        "Figurative or poetic language",
+        "Multi-meaning phrasing",
+        "Stacked clauses that change meaning"
+      ]
+    },
+    "6_structured_answer_patterns": {
+      "description": "Use formats AI systems can easily summarize and restate.",
+      "preferred_formats": [
+        "Bullet lists",
+        "Numbered steps",
+        "Comparisons",
+        "Pros / cons"
+      ],
+      "disallowed": [
+        "Hiding instructions inside long narrative paragraphs"
+      ]
+    },
+    "7_question_mirroring_headings": {
+      "description": "Headings should reflect real user questions.",
+      "example": "What happens if raccoon babies are already born?",
+      "disallowed": [
+        "Clever headings",
+        "Abstract headings",
+        "Vague headings"
+      ]
+    },
+    "8_consistent_terminology": {
+      "description": "Once a term is defined, reuse it consistently throughout the content.",
+      "disallowed": [
+        "Rotating synonyms for the same concept",
+        "Renaming entities for stylistic variation"
+      ]
+    },
+    "9_balanced_non_promotional_tone": {
+      "description": "Explanatory content must remain neutral and factual.",
+      "disallowed": [
+        "Sales language inside explanations",
+        "CTAs within instructional or factual sections"
+      ]
+    },
+    "10_summarizable_conclusion": {
+      "description": "End with a clear, factual summary that AI systems can restate accurately.",
+      "disallowed": [
+        "Emotional framing",
+        "Sales-heavy endings",
+        "Replacing summaries with persuasion"
+      ]
+    }
+  }
+}
