@@ -1,0 +1,72 @@
+{
+  "keyword": "laser hair removal richmond hill",
+  "target_location": "Richmond Hill, Ontario",
+  "intent": "commercial",
+  "topic_mode": "ServiceAreaLocal",
+  "category": "Laser Hair Removal & Skincare",
+  "content_type": "blog",
+  "output_format": "text",
+  "hero_banner": false,
+  "meta_fields": true,
+  "mid_banner_count": 2,
+  "manual_title": "",
+  "manual_sections": [],
+  "extra_sections": [
+    "How to Choose the Right Laser Hair Removal Clinic",
+    "What to Expect at Your First Laser Hair Removal Session",
+    "Laser Hair Removal vs. Waxing vs. Shaving: A Cost & Results Comparison",
+    "Is Laser Hair Removal Safe for All Skin Tones?"
+  ],
+  "keyword_list": [
+    "laser hair removal richmond hill",
+    "laser clinic richmond hill",
+    "permanent laser hair removal gta",
+    "laser hair removal for men richmond hill",
+    "soprano ice laser hair removal",
+    "pain-free laser hair removal",
+    "laser hair removal all skin tones",
+    "brazilian laser hair removal richmond hill",
+    "full body laser hair removal richmond hill",
+    "laser hair removal aurora",
+    "laser hair removal vaughan",
+    "laser hair removal markham",
+    "laser hair removal thornhill",
+    "laser hair removal",
+    "oxygeneo facial richmond hill"
+  ],
+  "related_topics": [
+    "permanent hair reduction",
+    "Unlimited Laser Hair Removal",
+    "Laser Hair Removal Treatments Guaranteed Results",
+    "costs of laser hair treatment",
+    "Full Body Laser Hair Removal"
+  ],
+  "internal_links": [
+    {
+      "anchor": "Laser Hair Removal",
+      "url": "https://royallaserclinic.com/laser-hair-removal/"
+    },
+    {
+      "anchor": "Laser Hair Removal for Men",
+      "url": "https://royallaserclinic.com/male-laser-hair-removal/"
+    },
+    {
+      "anchor": "Facial Treatments",
+      "url": "https://royallaserclinic.com/facial/"
+    },
+    {
+      "anchor": "Laser Hair Removal Prices",
+      "url": "https://royallaserclinic.com/prices/"
+    },
+    {
+      "anchor": "Book a Free Consultation",
+      "url": "https://royallaserclinic.com/contacts/"
+    }
+  ],
+  "outbound_links": [],
+  "video_portfolio": [],
+  "focus_for_writer": "Create a high-converting, trust-building blog post about {{keyword}} targeting {{target_location}}. Emphasize guaranteed results, the Soprano Ice system, inclusive treatment for all skin types, and the clinic's transparent pay-per-need model. Use a warm, reassuring tone that addresses common client concerns and positions Royal Laser as the top local choice.",
+  "search_goal": "Educate consumers searching for {{keyword}} in {{target_location}}, address common fears and questions about laser hair removal, build trust through expertise and social proof, and guide them toward booking a free consultation.",
+  "runtime_behavior": "blog",
+  "notes": "Brand reference: Royal Laser and Skincare Clinic | Primary CTA (use only when contextually appropriate): https://royallaserclinic.com/contacts/ | Key differentiators: results guarantee, lifetime free touch-ups, Soprano Ice technology, pay-only-for-what-you-need model, 15+ years experience, highest 5-star reviews in Richmond Hill"
+}

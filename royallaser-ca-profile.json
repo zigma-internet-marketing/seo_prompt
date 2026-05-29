@@ -1,0 +1,170 @@
+{
+  "business_name": "Royal Laser and Skincare Clinic",
+  "business_description": "Royal Laser and Skincare Clinic is a top-rated, family-owned cosmetic clinic in Richmond Hill specializing in permanent laser hair removal and advanced skincare treatments. With 15+ years of experience and the highest number of 5-star Google reviews in Richmond Hill, the clinic uses the Soprano Ice system to deliver safe, pain-free, results-guaranteed treatments for all skin tones and hair types.",
+  "industry": "Medical Aesthetics / Laser Hair Removal / Skincare",
+  "services": [
+    "Permanent laser hair removal (all body areas)",
+    "Laser hair removal for men",
+    "Brazilian laser hair removal",
+    "Full body laser hair removal",
+    "OxyGeneo 3-in-1 Super Facial",
+    "Classic facial",
+    "Microdermabrasion",
+    "Body contouring & cellulite removal",
+    "Complimentary consultations"
+  ],
+  "address": {
+    "street": "10815 Yonge St #202A",
+    "city": "Richmond Hill",
+    "region": "ON",
+    "postal_code": "L4C 3E3",
+    "country": "CA"
+  },
+  "phone": "905-237-3242",
+  "phone_link": "+19052373242",
+  "email": "info@royallaserclinic.com",
+  "website": "https://royallaserclinic.com/",
+  "logo_url": "https://royallaserclinic.com/wp-content/uploads/2024/07/logo.svg",
+  "blog_url": "https://royallaserclinic.com/blog/",
+  "author": {
+    "name": "Royal Laser Clinic Team",
+    "title": "Certified Aestheticians specializing in laser hair removal since 2010.",
+    "image": "",
+    "link": "https://royallaserclinic.com/about/"
+  },
+  "tone": "warm, results-focused, reassuring, client-first, transparent",
+  "primary_city": "Richmond Hill",
+  "service_area": [
+    "Richmond Hill",
+    "Aurora",
+    "Thornhill",
+    "Vaughan",
+    "Markham",
+    "North York",
+    "Newmarket",
+    "Stouffville",
+    "GTA",
+    "Ontario",
+    "Canada"
+  ],
+  "social_links": {
+    "facebook": "",
+    "instagram": "https://www.instagram.com/royallaserclinic/",
+    "twitter": "",
+    "linkedin": "",
+    "youtube": "",
+    "feed": ""
+  },
+  "default_internal_links": {
+    "services_url": "https://royallaserclinic.com/laser-hair-removal/",
+    "services_anchor": "Laser Hair Removal",
+    "lhr_url": "https://royallaserclinic.com/laser-hair-removal/",
+    "lhr_anchor": "Permanent Laser Hair Removal",
+    "men_url": "https://royallaserclinic.com/male-laser-hair-removal/",
+    "men_anchor": "Laser Hair Removal for Men",
+    "facial_url": "https://royallaserclinic.com/facial/",
+    "facial_anchor": "Facial Treatments",
+    "prices_url": "https://royallaserclinic.com/prices/",
+    "prices_anchor": "Laser Hair Removal Prices"
+  },
+  "default_cta": {
+    "cta_anchor": "📩 Book a Free Consultation",
+    "cta_url": "https://royallaserclinic.com/contacts/"
+  },
+  "trust_cta_by_intent": {
+    "Informational": "📩 Ask us a question",
+    "Commercial": "📩 Request a free consultation + pricing",
+    "Transactional": "📩 Book your free consultation today",
+    "Navigational": "📞 Contact Royal Laser Clinic",
+    "Default": "📩 Book a free consultation"
+  },
+  "cta_style": {
+    "section_color": "#1a1a1a",
+    "button_color": "#c9a84c",
+    "font_color": "#FFFFFF"
+  },
+  "schema_defaults": {
+    "opening_days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ],
+    "open_hour": "10:00",
+    "close_hour": "19:00"
+  },
+  "default_images": {
+    "feature_image_url": "https://royallaserclinic.com/wp-content/uploads/2024/09/Royal.png",
+    "body_image_1": "",
+    "body_image_2": ""
+  },
+  "brand_advantages": [
+    "Highest number of 5-star Google reviews for laser hair removal in Richmond Hill",
+    "Results-guaranteed with unlimited sessions until desired outcome is achieved",
+    "Lifetime free touch-ups included — no recurring package fees",
+    "14+ years of experience with certified aestheticians since 2010",
+    "Soprano Ice technology: safe for all skin tones, pain-free, FDA-approved",
+    "Family-owned clinic with personalized, client-first approach",
+    "Pay only for what you need — no forced packages of 6–12 sessions"
+  ],
+  "service_strengths": [
+    "Permanent laser hair removal for all body areas and skin types",
+    "Soprano Ice system: clinically proven, trusted by top physicians worldwide",
+    "Inclusive treatments effective on all skin tones and hair types",
+    "Transparent one-time fee structure aligned with individual client goals",
+    "Advanced facial treatments including OxyGeneo 3-in-1 Super Facial"
+  ],
+  "customer_experience_points": [
+    "Free consultations with first session included to assess fit",
+    "Flexible payment plans tailored to each client's budget",
+    "Honest, realistic advice with no upselling pressure",
+    "Clean, hygienic clinic environment with professional, caring staff"
+  ],
+  "quality_philosophy": [
+    "Guarantee results, not sessions",
+    "Personalize every treatment plan to the individual",
+    "Use only clinically proven, FDA-approved technology",
+    "Build long-term client relationships through trust and outcomes"
+  ],
+  "industry_environments": [
+    "Individual consumers seeking permanent hair removal",
+    "Men seeking laser hair removal",
+    "Clients with sensitive skin or diverse skin tones",
+    "Clients managing PCOS or hirsutism",
+    "Skincare-focused clients seeking facial treatments"
+  ],
+  "service_keywords": {
+    "laser_hair_removal": [
+      "laser hair removal richmond hill",
+      "permanent laser hair removal gta",
+      "soprano ice laser hair removal",
+      "laser hair removal all skin tones",
+      "pain-free laser hair removal"
+    ],
+    "men": [
+      "laser hair removal for men richmond hill",
+      "male laser hair removal gta",
+      "men's body hair laser treatment"
+    ],
+    "facial": [
+      "oxygeneo facial richmond hill",
+      "classic facial richmond hill",
+      "skincare treatments richmond hill"
+    ],
+    "pricing": [
+      "laser hair removal prices richmond hill",
+      "affordable laser hair removal gta",
+      "brazilian laser $19",
+      "underarms laser $12"
+    ],
+    "local": [
+      "laser clinic richmond hill",
+      "laser hair removal aurora",
+      "laser hair removal vaughan",
+      "laser hair removal markham",
+      "laser hair removal thornhill"
+    ]
+  }
+}
