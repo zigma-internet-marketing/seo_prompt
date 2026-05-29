@@ -27,12 +27,10 @@
   "website": "https://zigma.ca/",
   "logo_url": "https://media.licdn.com/dms/image/v2/C560BAQHvr4RApcQy3w/company-logo_200_200/company-logo_200_200/0/1631324638332?e=2147483647&t=qwWsXNvAqa5SYqRpwE10FuZn3DqvNJIagHWWMi9Rmw4&v=beta",
   "blog_url": "https://zigma.ca/blog/",
-  "author": {
-    "name": "Ryan Mesbahi",
-    "title": "Senior SEO & Digital Marketing Specialist with 10+ years of experience (Zigma Internet Marketing).",
-    "image": "https://zigma.ca/wp-content/uploads/2025/09/Ryan-Mesbahi.jpg",
-    "link": "https://ca.linkedin.com/in/ryan-me"
-  },
+  "publisher": {
+    "name": "Zigma Internet Marketing",
+    "logo": "https://media.licdn.com/dms/image/v2/C560BAQHvr4RApcQy3w/company-logo_200_200/company-logo_200_200/0/1631324638332?e=2147483647&t=qwWsXNvAqa5SYqRpwE10FuZn3DqvNJIagHWWMi9Rmw4&v=beta",
+   },
   "tone": "professional, transparent, data-driven, conversion-focused, client-first",
   "primary_city": "Markham",
   "service_area": [
