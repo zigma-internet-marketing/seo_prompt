@@ -1,0 +1,76 @@
+{
+  "keyword": "pest control toronto",
+  "target_location": "Toronto, Ontario",
+  "intent": "commercial",
+  "topic_mode": "ServiceAreaLocal",
+  "category": "Pest Control & Wildlife Removal Services",
+  "content_type": "blog",
+  "output_format": "text",
+  "hero_banner": false,
+  "meta_fields": true,
+  "mid_banner_count": 2,
+  "manual_title": "",
+  "manual_sections": [],
+  "extra_sections": [
+    "How to Choose the Right Pest Control Company in Toronto",
+    "Signs You Need a Professional Exterminator (Not a DIY Fix)",
+    "Pest Control vs Wildlife Removal: What's the Difference",
+    "How Toronto Homeowners Can Prevent Future Infestations"
+  ],
+  "keyword_list": [
+    "pest control toronto",
+    "pest control company toronto",
+    "exterminator toronto",
+    "ant removal toronto",
+    "cockroach removal toronto",
+    "bed bug removal toronto",
+    "mice removal toronto",
+    "rat removal toronto",
+    "raccoon removal toronto",
+    "squirrel removal toronto",
+    "wildlife removal gta",
+    "emergency pest control toronto",
+    "commercial pest control toronto",
+    "pest exclusion services",
+    "same day pest control toronto"
+  ],
+  "related_topics": [
+    "rodent control and exclusion",
+    "wildlife removal and prevention",
+    "insect and pest extermination",
+    "commercial and industrial pest management",
+    "sanitization and dead animal removal"
+  ],
+  "internal_links": [
+    {
+      "anchor": "Pest Control Services",
+      "url": "https://iconpest.ca/pest-control-services/"
+    },
+    {
+      "anchor": "Wildlife Removal Services",
+      "url": "https://iconpest.ca/wildlife-removal-services/"
+    },
+    {
+      "anchor": "Commercial Pest Control",
+      "url": "https://iconpest.ca/residential-commercial-pest-control/"
+    },
+    {
+      "anchor": "Emergency Pest Control",
+      "url": "https://iconpest.ca/emergency-pest-control-services/"
+    },
+    {
+      "anchor": "Service Areas",
+      "url": "https://iconpest.ca/residential-commercial-pest-control/"
+    },
+    {
+      "anchor": "Book a Free Inspection",
+      "url": "https://iconpest.ca/free-quote/"
+    }
+  ],
+  "outbound_links": [],
+  "video_portfolio": [],
+  "focus_for_writer": "Create a high-converting, authority-building blog post about {{keyword}} targeting {{target_location}}. Maintain a natural human tone, emphasize safety, licensing, and humane methods, avoid keyword stuffing, and provide practical insights that demonstrate expertise in pest control, wildlife removal, and prevention/exclusion.",
+  "search_goal": "Educate homeowners and businesses searching for {{keyword}} in {{target_location}}, clarify service options, build trust through licensing/experience credentials, and guide them toward booking a free inspection or quote.",
+  "runtime_behavior": "blog",
+  "notes": "Brand reference: Icon Pest Control & Wildlife Removal | Primary CTA (use only when contextually appropriate): https://iconpest.ca/free-quote/"
+}
