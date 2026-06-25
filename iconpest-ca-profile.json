@@ -1,0 +1,231 @@
+{
+  "business_name": "Icon Pest Control & Wildlife Removal",
+  "business_description": "Icon Pest is a Toronto-area pest control and wildlife removal company with 25+ years of experience serving homeowners, landlords, and businesses across the GTA. The team provides licensed, insured extermination and humane wildlife removal with same-day service in Toronto and next-day service across the extended GTA, backed by a 100% satisfaction guarantee.",
+  "industry": "Pest Control / Wildlife Removal Services",
+  "services": [
+    "Pest inspection & control",
+    "Pest prevention & exclusion",
+    "Emergency (24/7) pest control",
+    "Commercial & industrial pest control",
+    "Sanitization & disinfection",
+    "Dead animal removal & odour removal",
+    "Wildlife removal (raccoon, squirrel, skunk, bat, groundhog, bird exclusion)",
+    "Rodent control (rat & mice removal)",
+    "Insect control (ants, carpenter ants, cockroaches, bed bugs, wasps & hornets, spiders, and more)",
+    "Attic insulation removal & replacement",
+    "Chimney, vent, soffit & eave sealing (wildlife exclusion)",
+    "Seasonal pest protection plans"
+  ],
+  "address": {
+    "street": "18 King St E, Suite #1400",
+    "city": "Toronto",
+    "region": "ON",
+    "postal_code": "M5C 1C4",
+    "country": "CA"
+  },
+  "additional_offices": [
+    {
+      "label": "Vaughan office",
+      "street": "61 Rayette Road, Unit 6B",
+      "city": "Vaughan",
+      "region": "ON",
+      "postal_code": "L4K 2E8",
+      "country": "CA"
+    },
+    {
+      "label": "Richmond Hill office",
+      "street": "35 West Pearce St., Unit #30",
+      "city": "Richmond Hill",
+      "region": "ON",
+      "postal_code": "L4B 3A9",
+      "country": "CA"
+    },
+    {
+      "label": "Scarborough office",
+      "street": "100 Consilium Place, Suite #200",
+      "city": "Scarborough",
+      "region": "ON",
+      "postal_code": "M1H 3E3",
+      "country": "CA"
+    }
+  ],
+  "phone": "(647) 325-9060",
+  "phone_link": "+16473259060",
+  "secondary_phone": "(289) 379-6060",
+  "secondary_phone_link": "+12893796060",
+  "email": "info@iconpest.ca",
+  "website": "https://iconpest.ca/",
+  "logo_url": "https://iconpest.ca/wp-content/uploads/2024/07/iconpest-logo.png",
+  "blog_url": "https://iconpest.ca/blogs/",
+  "publisher": {
+    "name": "Icon Pest Control & Wildlife Removal",
+    "logo": "https://iconpest.ca/wp-content/uploads/2024/07/iconpest-logo.png"
+  },
+  "tone": "trustworthy, helpful, no-nonsense, safety-conscious, family & pet-friendly",
+  "primary_city": "Toronto",
+  "service_area": [
+    "Toronto",
+    "Scarborough",
+    "North York",
+    "Etobicoke",
+    "Richmond Hill",
+    "Vaughan",
+    "Thornhill",
+    "Woodbridge",
+    "Concord",
+    "Markham",
+    "Mississauga",
+    "Brampton",
+    "Pickering",
+    "Ajax",
+    "Aurora",
+    "Newmarket",
+    "King",
+    "Uxbridge",
+    "Alliston",
+    "Barrie",
+    "GTA",
+    "Ontario",
+    "Canada"
+  ],
+  "social_links": {
+    "facebook": "https://www.facebook.com/iconpestcontrolwildliferemoval/",
+    "instagram": "https://www.instagram.com/iconpest_ca/",
+    "twitter": "https://twitter.com/iconpest1",
+    "linkedin": "https://ca.linkedin.com/company/icon-pest-control-wildlife-removal",
+    "youtube": "https://www.youtube.com/channel/UCML2kBGUhW-BNsmNNn_W4-g/",
+    "feed": ""
+  },
+  "default_internal_links": {
+    "services_url": "https://iconpest.ca/pest-control-services/",
+    "services_anchor": "Pest Control Services",
+    "wildlife_url": "https://iconpest.ca/wildlife-removal-services/",
+    "wildlife_anchor": "Wildlife Removal Services",
+    "commercial_url": "https://iconpest.ca/residential-commercial-pest-control/",
+    "commercial_anchor": "Commercial Pest Control",
+    "emergency_url": "https://iconpest.ca/emergency-pest-control-services/",
+    "emergency_anchor": "Emergency Pest Control",
+    "locations_url": "https://iconpest.ca/locations/",
+    "locations_anchor": "Service Areas",
+    "quote_url": "https://iconpest.ca/free-quote/",
+    "quote_anchor": "Free Quote"
+  },
+  "default_cta": {
+    "cta_anchor": "📞 Book a Free Inspection",
+    "cta_url": "https://iconpest.ca/free-quote/"
+  },
+  "trust_cta_by_intent": {
+    "Informational": "📩 Ask a pest control question",
+    "Commercial": "📩 Request a free quote",
+    "Transactional": "📞 Book a same-day inspection",
+    "Navigational": "📞 Call Icon Pest",
+    "Default": "📞 Book a free inspection"
+  },
+  "cta_style": {
+    "section_color": "#0B1F3A",
+    "button_color": "#F5A623",
+    "font_color": "#FFFFFF"
+  },
+  "schema_defaults": {
+    "opening_days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "open_hour": "00:00",
+    "close_hour": "23:59",
+    "note": "24/7 emergency service available; standard office hours apply for non-emergency bookings"
+  },
+  "default_images": {
+    "feature_image_url": "https://iconpest.ca/wp-content/uploads/2024/07/iconpest-pest-control-wildlife-removal-greater-toronto-area-featured.png",
+    "body_image_1": "https://iconpest.ca/wp-content/uploads/2024/07/icon-pest-who-we-are.png",
+    "body_image_2": "https://iconpest.ca/wp-content/uploads/2024/07/icon-pest-wildlife-control-service-toronto-gta.jpg"
+  },
+  "brand_advantages": [
+    "25+ years of pest control and wildlife removal experience",
+    "Fully licensed, insured, and certified technicians",
+    "Same-day service in Toronto, next-day in the extended GTA",
+    "100% satisfaction guarantee on all services",
+    "Member of SPMAO, NPMA, CPMA/ACGP, and NWCOA",
+    "$85 inspection fee waived when you hire Icon Pest",
+    "10% off for first-time customers"
+  ],
+  "service_strengths": [
+    "Humane wildlife removal with one-way doors and exclusion sealing",
+    "Careful, non-damaging property work during removal",
+    "Sealing and waterproofing of entry points to prevent reinfestation",
+    "Eco-friendly, family- and pet-safe treatments (minimal odour, low irritation)",
+    "Customized treatment plans for residential, commercial, and industrial properties",
+    "24/7 emergency response for urgent infestations"
+  ],
+  "customer_experience_points": [
+    "Free inspection offers and transparent, no-hidden-fee pricing",
+    "Friendly, responsive customer service team",
+    "Flexible scheduling with follow-up visits to confirm results",
+    "Clear before/after communication on treatment plans and warranty coverage"
+  ],
+  "quality_philosophy": [
+    "Solve the root cause, not just the symptom (sealing & exclusion, not just removal)",
+    "Use humane, environmentally conscious methods wherever possible",
+    "Back every job with a satisfaction guarantee and warranty",
+    "Tailor treatment plans to the property, pest type, and infestation severity"
+  ],
+  "industry_environments": [
+    "Residential homes",
+    "Apartments & multi-residential buildings",
+    "Restaurants and bars",
+    "Office spaces and medical offices",
+    "Warehouses and logistics companies",
+    "Hotels and motels",
+    "Storage facilities",
+    "Food plants and packaging facilities",
+    "Government contracts",
+    "Seniors' homes"
+  ],
+  "service_keywords": {
+    "pest_control": [
+      "pest control toronto",
+      "exterminator toronto",
+      "ant removal toronto",
+      "cockroach removal toronto",
+      "bed bug removal toronto",
+      "carpenter ant removal",
+      "wasp and hornet removal"
+    ],
+    "rodent_control": [
+      "mice removal toronto",
+      "rat removal toronto",
+      "rodent exterminator gta",
+      "mouse exterminator ontario"
+    ],
+    "wildlife_removal": [
+      "raccoon removal toronto",
+      "squirrel removal toronto",
+      "skunk removal gta",
+      "bat removal toronto",
+      "wildlife removal richmond hill",
+      "animal in attic removal"
+    ],
+    "commercial": [
+      "commercial pest control toronto",
+      "restaurant pest control",
+      "warehouse pest control gta",
+      "office pest control toronto"
+    ],
+    "emergency": [
+      "emergency pest control toronto",
+      "same day pest control gta",
+      "24/7 exterminator toronto"
+    ],
+    "prevention": [
+      "pest exclusion services",
+      "chimney cap installation",
+      "attic vent sealing",
+      "pest prevention plan toronto"
+    ]
+  }
+}
